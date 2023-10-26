@@ -71,13 +71,47 @@ BEGIN
 END
 
 CREATE PROCEDURE CrearUsuario
-	@username TEXT.
+	@username TEXT,
 	@nombre TEXT,
-	@contrasena TEXT,
+	@contrasena TEXT
 AS
 BEGIN
-	IF NOT EXISTS()
-	{
-		INSERT INTO 
-	}
+	IF NOT EXISTS(SELECT 1 FROM Usuario WHERE username LIKE @username)
+		BEGIN
+			INSERT INTO Usuario(username, nombre, contrasena)
+				VALUES(@username, @nombre, @contrasena)
+		END
+END
+
+ALTER PROCEDURE CambiarEstadoPeli
+	@idPelicula INT,
+	@idUsuario INT
+AS
+BEGIN
+	IF 'True' = (SELECT estado FROM Usuario_pelicula WHERE idPelicula = @idPelicula AND @idUsuario = idUsuario)
+		BEGIN
+			UPDATE Usuario_pelicula
+			SET estado = 'False'
+			WHERE @idPelicula = idPelicula
+				AND @idUsuario = idUsuario
+		END
+	ELSE
+		BEGIN
+			UPDATE Usuario_pelicula
+				SET estado = 'True'
+				WHERE @idPelicula = idPelicula
+					AND @idUsuario = idUsuario
+		END
+END
+
+/*TRIGGER PARA Q CUANDO SE CAMBIE ESTADO A VERDADERO SE CREE SU RATING CON LA FECHA*/
+CREATE TRIGGER CrearRating
+ON Usuario_pelicula
+AFTER UPDATE
+AS
+	IF UPDATE(estado)
+	BEGIN
+		/*SI CAMBIO A TRUE, ACTUALIZAR LA FECHA SI EXISTE. SI NO EXISTE CREARLO Y PONER LA FECHA
+			(NECESITO RECIBIR LOS ID'S DE PELI Y PELICULA??? PARA Q QUEDE CONECTADO CON USUARIO_PELICULA, en donde tendría q actualizar idRating)*/
+	END
 END

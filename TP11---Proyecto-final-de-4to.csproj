@@ -7,4 +7,9 @@
     <RootNamespace>TP11___Proyecto_final_de_4to</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="dapper" Version="2.1.15" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
 </Project>

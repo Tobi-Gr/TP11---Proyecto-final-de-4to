@@ -1,9 +1,9 @@
 public class Pelicula
 {
-    public int idPelicula {get; set;}
-    public string titulo {get; set;}
-    public string sinopsis {get; set;}
-    public int anioLanzamiento {get; set;}
+    public static int idPelicula {get; set;}
+    public static string titulo {get; set;}
+    public static string sinopsis {get; set;}
+    public static int anioLanzamiento {get; set;}
 
     public Pelicula(int id, string title, string sinop, int anio)
     {
@@ -12,4 +12,5 @@ public class Pelicula
         sinopsis = sinop;
         anioLanzamiento = anio;
     }
+
 }
