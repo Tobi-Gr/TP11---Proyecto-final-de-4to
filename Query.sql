@@ -61,11 +61,23 @@ BEGIN
 	FROM Rating
 	INNER JOIN Usuario_pelicula
 		ON Usuario_pelicula.idRating = Rating.idRating
-	WHERE Usuario_pelicula.idRating IN (SELECT *
+	WHERE Usuario_pelicula.idPelicula IN (SELECT Pelicula.idPelicula
 			FROM Pelicula
 			INNER JOIN Usuario_pelicula
 				ON pelicula.idPelicula = Usuario_pelicula.idPelicula
 			INNER JOIN Usuario
 				ON Usuario.idUsuario = Usuario_pelicula.idUsuario
 			WHERE Usuario_pelicula.estado = 'True')
+END
+
+CREATE PROCEDURE CrearUsuario
+	@username TEXT.
+	@nombre TEXT,
+	@contrasena TEXT,
+AS
+BEGIN
+	IF NOT EXISTS()
+	{
+		INSERT INTO 
+	}
 END
