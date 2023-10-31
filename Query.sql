@@ -83,7 +83,7 @@ BEGIN
 		END
 END
 
-ALTER PROCEDURE CambiarEstadoPeli
+CREATE PROCEDURE CambiarEstadoPeli
 	@idPelicula INT,
 	@idUsuario INT
 AS
@@ -105,38 +105,11 @@ BEGIN
 END
 
 
-CREATE TRIGGER ActualizarRating
-ON Usuario_pelicula
-AFTER UPDATE
+CREATE PROCEDURE InsertarRating
+	@calificacion int,
+	@opinion text
 AS
 BEGIN
-    SET NOCOUNT ON;
-    -- Verificar si se actualizó el campo 'estado'
-    IF UPDATE(estado)
-    BEGIN
-        -- Obtener los datos actualizados de Usuario_pelicula
-        DECLARE @estadoPrevio bit;
-        DECLARE @estadoNuevo bit;
-        DECLARE @idUsuario int;
-
-        SELECT @estadoPrevio = deleted.estado, @estadoNuevo = inserted.estado, @idUsuario = inserted.idUsuario
-        FROM deleted
-        JOIN inserted ON deleted.id = inserted.id;
-
-        -- Si el campo 'estado' cambió a TRUE
-        IF @estadoNuevo = 1
-        BEGIN
-            -- Actualizar el campo 'fecha' en la tabla Rating con la fecha actual
-            UPDATE Rating
-            SET fecha = GETDATE()
-            WHERE idRating = @idUsuario;
-        END
-        -- Si el campo 'estado' cambió a FALSE
-        ELSE
-        BEGIN
-            -- Eliminar la fila en la tabla Rating relacionada con el Usuario_pelicula
-            DELETE FROM Rating
-            WHERE idRating = @idUsuario;
-        END
-    END
-END;
+	INSERT INTO Rating (calificacion, opinion, fecha)
+		VALUES(@calificacion, @opinion, (SELECT GETDATE()))
+END
