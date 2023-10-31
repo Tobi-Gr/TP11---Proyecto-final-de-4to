@@ -104,14 +104,39 @@ BEGIN
 		END
 END
 
-/*TRIGGER PARA Q CUANDO SE CAMBIE ESTADO A VERDADERO SE CREE SU RATING CON LA FECHA*/
-CREATE TRIGGER CrearRating
+
+CREATE TRIGGER ActualizarRating
 ON Usuario_pelicula
 AFTER UPDATE
 AS
-	IF UPDATE(estado)
-	BEGIN
-		/*SI CAMBIO A TRUE, ACTUALIZAR LA FECHA SI EXISTE. SI NO EXISTE CREARLO Y PONER LA FECHA
-			(NECESITO RECIBIR LOS ID'S DE PELI Y PELICULA??? PARA Q QUEDE CONECTADO CON USUARIO_PELICULA, en donde tendría q actualizar idRating)*/
-	END
-END
+BEGIN
+    SET NOCOUNT ON;
+    -- Verificar si se actualizó el campo 'estado'
+    IF UPDATE(estado)
+    BEGIN
+        -- Obtener los datos actualizados de Usuario_pelicula
+        DECLARE @estadoPrevio bit;
+        DECLARE @estadoNuevo bit;
+        DECLARE @idUsuario int;
+
+        SELECT @estadoPrevio = deleted.estado, @estadoNuevo = inserted.estado, @idUsuario = inserted.idUsuario
+        FROM deleted
+        JOIN inserted ON deleted.id = inserted.id;
+
+        -- Si el campo 'estado' cambió a TRUE
+        IF @estadoNuevo = 1
+        BEGIN
+            -- Actualizar el campo 'fecha' en la tabla Rating con la fecha actual
+            UPDATE Rating
+            SET fecha = GETDATE()
+            WHERE idRating = @idUsuario;
+        END
+        -- Si el campo 'estado' cambió a FALSE
+        ELSE
+        BEGIN
+            -- Eliminar la fila en la tabla Rating relacionada con el Usuario_pelicula
+            DELETE FROM Rating
+            WHERE idRating = @idUsuario;
+        END
+    END
+END;
