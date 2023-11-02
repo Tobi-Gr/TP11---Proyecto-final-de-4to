@@ -87,11 +87,11 @@ public static class BD
           }
      }
 
-     public static void InsertarRating(string opinion, int calificacion)
+     public static void InsertarRating(string opinion, int calificacion, int idPelicula, int idUsuario)
      {
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC InsertarRating @opinion = " + opinion + ", @calificacion = " + calificacion + ";";
+               string sql = "EXEC InsertarRating @opinion = " + opinion + ", @calificacion = " + calificacion + ", @idPelicula = " + idPelicula + ", @idUsuario = " + idUsuario + ";";
                db.Execute(sql);
           }
      }
