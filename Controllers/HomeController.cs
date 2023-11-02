@@ -23,6 +23,14 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Home(int idUsuario)
+    {
+        ViewBag.pelisVistas = BD.ObtenerPelisVistas(idUsuario);
+        ViewBag.pelisPorVer = BD.ObtenerPelisPorVer(idUsuario);
+        ViewBag.ratings = BD.ObtenerTodosLosRatings(idUsuario);
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();

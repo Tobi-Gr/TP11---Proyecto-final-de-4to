@@ -6,7 +6,7 @@ BEGIN
 	FROM Pelicula
 	INNER JOIN Usuario_pelicula
 		ON @idUsuario = Usuario_pelicula.idUsuario
-	WHERE Usuario_pelicula.estado = 'por ver'
+	WHERE Usuario_pelicula.estado = 'False'
 END
 
 CREATE PROCEDURE ObtenerRating
@@ -16,10 +16,8 @@ AS
 BEGIN
 	SELECT *
 	FROM Rating
-	INNER JOIN Usuario_pelicula
-		ON Usuario_pelicula.idRating = Rating.idRating
-	WHERE @idUsuario = Usuario_pelicula.idUsuario
-		AND @idPelicula = Usuario_pelicula.idPelicula
+	WHERE idPelicula = @idPelicula
+		AND idUsuario = @idUsuario 
 END
 
 CREATE PROCEDURE BuscarPeli
@@ -59,15 +57,7 @@ AS
 BEGIN
 	SELECT *
 	FROM Rating
-	INNER JOIN Usuario_pelicula
-		ON Usuario_pelicula.idRating = Rating.idRating
-	WHERE Usuario_pelicula.idPelicula IN (SELECT Pelicula.idPelicula
-			FROM Pelicula
-			INNER JOIN Usuario_pelicula
-				ON pelicula.idPelicula = Usuario_pelicula.idPelicula
-			INNER JOIN Usuario
-				ON Usuario.idUsuario = Usuario_pelicula.idUsuario
-			WHERE Usuario_pelicula.estado = 'True')
+	WHERE @idUsuario = @idUsuario
 END
 
 CREATE PROCEDURE CrearUsuario
@@ -107,9 +97,36 @@ END
 
 CREATE PROCEDURE InsertarRating
 	@calificacion int,
-	@opinion text
+	@opinion text,
+	@idUsuario int,
+	@idPelicula int
 AS
 BEGIN
-	INSERT INTO Rating (calificacion, opinion, fecha)
-		VALUES(@calificacion, @opinion, (SELECT GETDATE()))
+	INSERT INTO Rating (calificacion, opinion, fecha, idUsuario, idPelicula)
+		VALUES(@calificacion, @opinion, (SELECT GETDATE()), @idUsuario, @idPelicula)
+END
+
+CREATE PROCEDURE ActualizarRating
+	@calificacion int,
+	@opinion text,
+	@fecha date,
+	@idUsuario int,
+	@idPelicula int
+AS 
+BEGIN
+	UPDATE Rating
+		SET calificacion = @calificacion, 
+			opinion = @opinion,
+			fecha = (SELECT GETDATE())
+	WHERE idUsuario = @idUsuario
+		AND idPelicula = @idPelicula
+END
+
+CREATE PROCEDURE QuieroVer
+	@idUsuario int,
+	@idPelicula int
+AS
+BEGIN
+	INSERT INTO Usuario_pelicula(estado, idPelicula, idUsuario)
+		VALUES('False', @idPelicula, @idUsuario)
 END

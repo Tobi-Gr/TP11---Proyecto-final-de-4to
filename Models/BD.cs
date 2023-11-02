@@ -36,7 +36,7 @@ public static class BD
           return listaPeliculas;
      }
 
-     public static List<Rating> ObtenerRatings(int idUsuario)
+     public static List<Rating> ObtenerTodosLosRatings(int idUsuario)
      {
           List<Rating> listaRatings = new List<Rating>();
           using(SqlConnection db = new SqlConnection(_connectionString))
