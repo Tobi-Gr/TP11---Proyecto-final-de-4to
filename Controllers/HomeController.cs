@@ -31,19 +31,25 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult PostRegistro(string nombre, string username, string contrasena)
+    [HttpPost]
+    public IActionResult PostRegistro(string nombre, string username, string contrasena, string confirmacion)
     {
-        BD.CrearUsuario(username, nombre, contrasena);
-        Usuario nuevo = BD.ObtenerUsuario(username);
-        return RedirectToAction("Home", new {idUsuario = nuevo.idUsuario});  
+        if(contrasena == confirmacion && BD.ObtenerUsuario(username) == null)
+        {
+            BD.CrearUsuario(username, nombre, contrasena);
+            Usuario nuevo = BD.ObtenerUsuario(username);
+            return RedirectToAction("Home", new {idUsuario = nuevo.idUsuario});
+        }
+        return RedirectToAction("Registrarse");
     }
 
+    [HttpPost]
     public IActionResult PostInicioSesion(string username, string contrasena)
     {
         Usuario existente = BD.ObtenerUsuario(username);
         if(contrasena == existente.contrasena)
         {
-            return RedirectToAction("Home", new {idUsuario = existente.idUsuario});
+            return RedirectToAction("Home",new {idUsuario = existente.idUsuario});
         }
         else
         {

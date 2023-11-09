@@ -1,7 +1,3 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
 <header>
         <nav >
             <div class="container-fluid">
@@ -12,18 +8,22 @@
             </div>
         </nav>
 </header>
-<br>
-<h2>Iniciar Sesión</h2>
-<form  method="post" action='@Url.Action("PostInicioSesion")'>
 
+<h2>Registrate</h2>
+<form  method="post" action='@Url.Action("PostRegistro")'>
+
+    <input class="form-control" type="text" placeholder="Nombre" id="nombre" aria-label="default input example">
+    <br>
     <input class="form-control" type="text" placeholder="Username" id="username" aria-label="default input example">
     <br>
     <input class="form-control" type="password" placeholder="Contraseña" id="contrasena" aria-label="default input example">
     <br>
-    <button type="submit" class="btn btn-primary">Iniciar</button>
+    <input class="form-control" type="password" placeholder="Confirmar contraseña" id="confirmacion" aria-label="default input example">
+    <br>
+    <button type="submit" class="btn btn-primary">Registrarse</button>
 </form>
 
-<h6>¿No tenés cuenta?</h6>
-<form action='@Url.Action("Registrarse")'>
-    <button>Registrate</button>
+<h6>¿Tenés cuenta?</h6>
+<form action='@Url.Action("Index")'>
+    <button>Inicia sesión</button>
 </form>

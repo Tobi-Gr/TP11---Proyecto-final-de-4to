@@ -63,8 +63,8 @@ public static class BD
           Usuario usuario;
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC Obtenerusuario @username = " + username + ";"; 
-               usuario = db.QueryFirstOrDefault<Usuario>(sql);
+               string sql = "EXEC Obtenerusuario @username = @pusername;"; 
+               usuario = db.QueryFirstOrDefault<Usuario>(sql, new {pusername = username});
           }
           return usuario;
      }
@@ -73,8 +73,8 @@ public static class BD
      {
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC CrearUsuario @username = " + username + ", @nombre = " + nombre + ", @contrasena = " + contrasena + ";";
-               db.Execute(sql);
+               string sql = "EXEC CrearUsuario @username = @pusername, @nombre = @pnombre, @contrasena = @pcontrasena;";
+               db.Execute(sql, new {pusername = username, pnombre = nombre, pcontrasena = contrasena} );
           }
      }
 
@@ -82,8 +82,8 @@ public static class BD
      {
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC CambiarEstadoPeli @idPelicula = " + idPelicula + ", @idUsuario = " + idUsuario + ";";
-               db.Execute(sql);
+               string sql = "EXEC CambiarEstadoPeli @idPelicula = @pidPelicula, @idUsuario = @pidUsuario;";
+               db.Execute(sql, new {pidPelicula = idPelicula, pidUsuario = idUsuario});
           }
      }
 
@@ -91,8 +91,8 @@ public static class BD
      {
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC InsertarRating @opinion = " + opinion + ", @calificacion = " + calificacion + ", @idPelicula = " + idPelicula + ", @idUsuario = " + idUsuario + ";";
-               db.Execute(sql);
+               string sql = "EXEC InsertarRating @opinion = @popinion, @calificacion = @pcalificacion, @idPelicula = @pidPelicula, @idUsuario = @pidUsuario;";
+               db.Execute(sql, new {popinion = opinion, pcalificacion = calificacion, pidPelicula = idPelicula, pidUsuario = idUsuario});
           }
      }
      
