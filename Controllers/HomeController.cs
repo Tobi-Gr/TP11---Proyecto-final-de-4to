@@ -34,13 +34,23 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult PostRegistro(string nombre, string username, string contrasena, string confirmacion)
     {
-        if(contrasena == confirmacion && BD.ObtenerUsuario(username) == null)
+        Usuario user = BD.ObtenerUsuario(username);
+        if (user == null)
         {
-            BD.CrearUsuario(username, nombre, contrasena);
-            Usuario nuevo = BD.ObtenerUsuario(username);
-            return RedirectToAction("Home", new {idUsuario = nuevo.idUsuario});
+            if(contrasena == confirmacion && username != "")
+            {
+                BD.CrearUsuario(username, nombre, contrasena);
+                Usuario nuevo = BD.ObtenerUsuario(username);
+                return RedirectToAction("Home", new {idUsuario = nuevo.idUsuario});
+            }
+            {
+                ViewBag.Error = "Contraseñas no coinciden o no ingreso username";    
+            }
         }
-        return RedirectToAction("Registrarse");
+        else {
+            ViewBag.Error = "El usuario ya existe en la base";
+        }
+        return View("Registrarse");
     }
 
     [HttpPost]

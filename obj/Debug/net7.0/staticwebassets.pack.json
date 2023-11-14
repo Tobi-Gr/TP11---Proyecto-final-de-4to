@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\fonts\\notable.ttf"
     },
     {
+      "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\Thumbs.db",
+      "PackagePath": "staticwebassets\\img\\Thumbs.db"
+    },
+    {
       "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },

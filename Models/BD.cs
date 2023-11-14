@@ -1,4 +1,5 @@
 using System.Data.SqlClient;
+using System.Data;
 using Dapper;
 public static class BD
 {
@@ -8,8 +9,8 @@ public static class BD
           List<Pelicula> listaPeliculas = new List<Pelicula>();
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC ObtenerPelisPorVer @idUsuario = " + idUsuario + ";"; //creo que era así
-               listaPeliculas = db.Query<Pelicula>(sql).ToList();
+               string sp = "ObtenerPelisPorVer";
+               listaPeliculas = db.Query<Pelicula>(sp, new {pidUsuario = idUsuario}, commandType:CommandType.StoredProcedure).ToList();
           }
           return listaPeliculas;
      }
@@ -19,8 +20,8 @@ public static class BD
           Rating rating;
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC ObtenerRating @idUsuario = " + idUsuario + ", @idPelicula = " + idPelicula + ";"; 
-               rating = db.QueryFirstOrDefault<Rating>(sql);
+               string sp = "ObtenerRating"; 
+               rating = db.QueryFirstOrDefault<Rating>(sp, new {pidUsuario = idUsuario, pidPelicula = idPelicula}, commandType: CommandType.StoredProcedure);
           }
           return rating;
      }
@@ -30,8 +31,8 @@ public static class BD
           List<Pelicula> listaPeliculas = new List<Pelicula>();
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC ObtenerPelisVistas @idUsuario = " + idUsuario + ";";
-               listaPeliculas = db.Query<Pelicula>(sql).ToList();
+               string sp = "ObtenerPelisVistas";
+               listaPeliculas = db.Query<Pelicula>(sp, new {pidUsuario = idUsuario}, commandType: CommandType.StoredProcedure).ToList();
           }
           return listaPeliculas;
      }
@@ -41,8 +42,8 @@ public static class BD
           List<Rating> listaRatings = new List<Rating>();
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC ObtenerRatings @idUsuario = " + idUsuario + ";";
-               listaRatings = db.Query<Rating>(sql).ToList();
+               string sp = "ObtenerRatings";
+               listaRatings = db.Query<Rating>(sp, new {pidUsuario = idUsuario}, commandType: CommandType.StoredProcedure).ToList();
           }
           return listaRatings;
      }
@@ -52,8 +53,8 @@ public static class BD
           List<Pelicula> listaPelis = new List<Pelicula>();
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC BuscarPeli @buscar = " + busqueda + ";";
-               listaPelis = db.Query<Pelicula>(sql).ToList();
+               string sp = "BuscarPeli";
+               listaPelis = db.Query<Pelicula>(sp, new {pbuscar = busqueda}, commandType: CommandType.StoredProcedure).ToList();
           }
           return listaPelis;
      }
@@ -63,8 +64,8 @@ public static class BD
           Usuario usuario;
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC Obtenerusuario @username = @pusername;"; 
-               usuario = db.QueryFirstOrDefault<Usuario>(sql, new {pusername = username});
+               string sp = "Obtenerusuario"; 
+               usuario = db.QueryFirstOrDefault<Usuario>(sp, new {pusername = username}, commandType: CommandType.StoredProcedure);
           }
           return usuario;
      }
@@ -73,8 +74,8 @@ public static class BD
      {
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC CrearUsuario @username = @pusername, @nombre = @pnombre, @contrasena = @pcontrasena;";
-               db.Execute(sql, new {pusername = username, pnombre = nombre, pcontrasena = contrasena} );
+               string sp = "CrearUsuario";
+               db.Execute(sp, new {pusername = username, pnombre = nombre, pcontrasena = contrasena}, commandType: CommandType.StoredProcedure);
           }
      }
 
@@ -82,8 +83,8 @@ public static class BD
      {
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC CambiarEstadoPeli @idPelicula = @pidPelicula, @idUsuario = @pidUsuario;";
-               db.Execute(sql, new {pidPelicula = idPelicula, pidUsuario = idUsuario});
+               string sp = "CambiarEstadoPeli";
+               db.Execute(sp, new {pidPelicula = idPelicula, pidUsuario = idUsuario}, commandType: CommandType.StoredProcedure);
           }
      }
 
@@ -91,8 +92,8 @@ public static class BD
      {
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sql = "EXEC InsertarRating @opinion = @popinion, @calificacion = @pcalificacion, @idPelicula = @pidPelicula, @idUsuario = @pidUsuario;";
-               db.Execute(sql, new {popinion = opinion, pcalificacion = calificacion, pidPelicula = idPelicula, pidUsuario = idUsuario});
+               string sp = "InsertarRating";
+               db.Execute(sp, new {popinion = opinion, pcalificacion = calificacion, pidPelicula = idPelicula, pidUsuario = idUsuario}, commandType: CommandType.StoredProcedure);
           }
      }
      
