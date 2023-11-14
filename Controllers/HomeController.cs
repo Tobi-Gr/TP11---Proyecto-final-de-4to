@@ -59,7 +59,7 @@ public class HomeController : Controller
         Usuario existente = BD.ObtenerUsuario(username);
         if(contrasena == existente.contrasena)
         {
-            return RedirectToAction("Home",new {idUsuario = existente.idUsuario});
+            return RedirectToAction("Home", new {idUsuario = existente.idUsuario});
         }
         else
         {

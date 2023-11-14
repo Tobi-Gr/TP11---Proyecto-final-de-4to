@@ -12,4 +12,6 @@ public class Usuario_pelicula
         idPelicula = idP;
         idUsuario = idU;
     }
+
+    public Usuario_pelicula(){}
 }

@@ -14,5 +14,5 @@ public class Pelicula
         anioLanzamiento = anio;
         foto = poster;
     }
-
+    public Pelicula(){}
 }

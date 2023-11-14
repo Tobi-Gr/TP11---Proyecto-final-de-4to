@@ -16,4 +16,6 @@ public  class Rating
         idPeli = idPelicula;
         idUsuario = idUser;
     }
+
+    public Rating(){}
 }

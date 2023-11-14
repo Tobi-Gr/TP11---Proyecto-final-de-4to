@@ -3,15 +3,14 @@
             <div class="container-fluid">
                 <div class="text-center header">
                     <h1 class="display-4">MOVIE GEMS</h1>
-                    <p>Lorem ipsum slogan</p>
+                    <p>Las verdaderas gemas del cine</p>
                 </div>
             </div>
         </nav>
 </header>
-
+<div class = "spaces">
 <h2>Registrate</h2>
 <form  method="post" action='@Url.Action("PostRegistro")'>
-
     <input class="form-control" type="text" placeholder="Nombre" name="nombre" aria-label="default input example">
     <br>
     <input class="form-control" type="text" placeholder="Username" name="username" aria-label="default input example">
@@ -23,9 +22,9 @@
     <button type="submit" class="btn btn-primary">Registrarse</button>
     <h3>@ViewBag.Error</h3>
 </form>
-
-
+<br>
 <h6>¿Tenés cuenta?</h6>
 <form action='@Url.Action("Index")'>
     <button>Inicia sesión</button>
 </form>
+</div>
