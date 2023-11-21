@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "q1mwl567z0456rnVtFqmGqkFaS/EXpKgBz1z/4l5e6s=",
+  "Hash": "X+AryFx7QNw8YvL4u1Kxhs/Ysbuai5ZTobz7PchXgx8=",
   "Source": "TP11---Proyecto-final-de-4to",
   "BasePath": "_content/TP11---Proyecto-final-de-4to",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\Query.sql",
+      "SourceId": "TP11---Proyecto-final-de-4to",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "BasePath": "_content/TP11---Proyecto-final-de-4to",
+      "RelativePath": "Query.sql",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Query.sql"
     }
   ]
 }

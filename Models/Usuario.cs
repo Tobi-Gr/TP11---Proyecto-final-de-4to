@@ -5,7 +5,6 @@ public class Usuario
     public string nombre {get; set;}
     public string contrasena {get; set;}
 
-    public Usuario(){}
 
     public Usuario(int id, string user, string nom, string contra)
     {
@@ -14,4 +13,7 @@ public class Usuario
         nombre = nom;
         contrasena = contra;
     }
+    
+    public Usuario(){}
+
 }

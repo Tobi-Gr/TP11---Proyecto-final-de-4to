@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\TP11---Proyecto-final-de-4to.bundle.scp.css"
     },
     {
+      "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\Query.sql",
+      "PackagePath": "staticwebassets\\Query.sql"
+    },
+    {
       "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

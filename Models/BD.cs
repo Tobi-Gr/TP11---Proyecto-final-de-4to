@@ -64,7 +64,7 @@ public static class BD
           Usuario usuario;
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
-               string sp = "Obtenerusuario"; 
+               string sp = "ObtenerUsuario";
                usuario = db.QueryFirstOrDefault<Usuario>(sp, new {pusername = username}, commandType: CommandType.StoredProcedure);
           }
           return usuario;
