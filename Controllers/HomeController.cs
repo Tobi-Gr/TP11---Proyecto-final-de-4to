@@ -26,8 +26,8 @@ public class HomeController : Controller
     public IActionResult Home(int idUsuario)
     {
         ViewBag.pelisVistas = BD.ObtenerPelisVistas(idUsuario);
-        ViewBag.pelisPorVer = BD.ObtenerPelisPorVer(idUsuario);
-        ViewBag.ratings = BD.ObtenerTodosLosRatings(idUsuario);
+        ViewBag.pelisPorVer = BD.ObtenerPelisPorVer(idUsuario); //DEVUELVE TODAS LAS PELICULAS DOS VECES, POR ALGUNA RAZON
+        ViewBag.ratings = BD.ObtenerTodosLosRatings(idUsuario);        
         return View();
     }
 
@@ -57,13 +57,19 @@ public class HomeController : Controller
     public IActionResult PostInicioSesion(string username, string contrasena)
     {
         Usuario existente = BD.ObtenerUsuario(username);
-        if(contrasena == existente.contrasena)
+        if(existente == null)
+        {
+            ViewBag.Error = "Ese usuario no existe";
+            return View("Index");
+        }
+        else if(contrasena == existente.contrasena)
         {
             return RedirectToAction("Home", new {idUsuario = existente.idUsuario});
         }
         else
         {
-            return RedirectToAction("Index");
+            ViewBag.Error = "Contraseña incorrecta";
+            return View("Index");
         }
     }
 

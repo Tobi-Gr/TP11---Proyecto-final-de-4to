@@ -25,3 +25,23 @@ function openPage(pageName, elmnt, color) {
   
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
+
+  function MostrarInfo(id)
+{
+    $.ajax(
+        {
+            type: 'POST',
+            dataType: 'JSON',
+            url: '/Home/VerSeriesAjax',
+            data: {idSerie : id},
+            success:
+                function(response)
+                {
+                    $("#titulo").html(response.nombre);
+                    $("#InfoModal").html(response.sinopsis);
+                }
+        }
+    )
+}
+
+  

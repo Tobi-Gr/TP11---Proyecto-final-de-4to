@@ -1,4 +1,4 @@
-CREATE PROCEDURE ObtenerPelisPorVer
+ALTER PROCEDURE ObtenerPelisPorVer
 	@pidUsuario INT 
 AS
 BEGIN 
@@ -9,7 +9,7 @@ BEGIN
 	WHERE Usuario_pelicula.estado = 'False'
 END
 
-CREATE PROCEDURE ObtenerRating
+ALTER PROCEDURE ObtenerRating
 	@pidUsuario INT,
 	@pidPelicula INT
 AS
@@ -20,7 +20,7 @@ BEGIN
 		AND idUsuario = @pidUsuario 
 END
 
-CREATE PROCEDURE BuscarPeli
+ALTER PROCEDURE BuscarPeli
 	@pbuscar TEXT
 AS
 BEGIN
@@ -38,7 +38,7 @@ BEGIN
 	WHERE username LIKE @pusername
 END
 
-CREATE PROCEDURE ObtenerPelisVistas
+ALTER PROCEDURE ObtenerPelisVistas
 	@pidUsuario INT
 AS
 BEGIN
@@ -51,7 +51,7 @@ BEGIN
 	WHERE Usuario_pelicula.estado = 'True' AND Usuario.idUsuario = @pidUsuario
 END
 
-CREATE PROCEDURE ObtenerRatings
+ALTER PROCEDURE ObtenerRatings
 	@pidUsuario INT
 AS
 BEGIN
@@ -73,7 +73,7 @@ BEGIN
 		END
 END
 
-CREATE PROCEDURE CambiarEstadoPeli
+ALTER PROCEDURE CambiarEstadoPeli
 	@pidPelicula INT,
 	@pidUsuario INT
 AS
@@ -95,7 +95,7 @@ BEGIN
 END
 
 
-CREATE PROCEDURE InsertarRating
+ALTER PROCEDURE InsertarRating
 	@pcalificacion int,
 	@popinion text,
 	@pidUsuario int,
@@ -106,7 +106,7 @@ BEGIN
 		VALUES(@pcalificacion, @popinion, (SELECT GETDATE()), @pidUsuario, @pidPelicula)
 END
 
-CREATE PROCEDURE ActualizarRating
+ALTER PROCEDURE ActualizarRating
 	@pcalificacion int,
 	@popinion text,
 	@pfecha date,
@@ -122,7 +122,7 @@ BEGIN
 		AND idPelicula = @pidPelicula
 END
 
-CREATE PROCEDURE QuieroVer
+ALTER PROCEDURE QuieroVer
 	@pidUsuario int,
 	@pidPelicula int
 AS
