@@ -250,3 +250,19 @@ body, html {
 #QuieroVer{
   padding-left: 9%;
 }
+
+/*MODAL*/
+
+.modal-body{
+  display:flex;
+  flex-direction: row;
+}
+
+.modal-body img{
+  width: 40%;
+  margin-right: 5%;
+}
+
+.modal-dialog {
+        max-width: 800px;
+}

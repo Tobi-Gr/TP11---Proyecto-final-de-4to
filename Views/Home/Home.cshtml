@@ -36,11 +36,11 @@
         {
             <div class="col-3 col-md-3">
                 <div class="card">
-                    <button class = "cerrar" @*onclick="myFunction()" // ABRIR MODAL PARA BORRAR, tiene que pasarle el id de la peli y usuario*@> x </button>
+                    <button class = "cerrar" data-bs-toggle="modal" data-bs-target="#EliminacionModal" onclick="ModelEliminarPeli(@item.idPelicula)"> x </button>
                     <img src="@item.foto">
                     <h3 class="titulo-peli">@item.titulo</h3>
                     <div class="quieroVerCard">
-                        <button class="btn btn-primary masInfo">Más info</button> @*onclick="MostrarInfo()" // ABRIR MODAL con id peli*@
+                        <button class="btn btn-primary masInfo" data-bs-toggle="modal" data-bs-target="#InfoModal" onclick="MostrarInfo(@item.idPelicula)">Más info</button>
                         <input type="checkbox" class="ui-checkbox"> @*onclick="myFunction()" // ver como mierda hacemos que esto funcione :b*@                        
                     </div>
                 </div>
@@ -49,7 +49,7 @@
        </div>
 
 </div>
-<div class="modal fade" id="InfoSeries" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="InfoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -57,8 +57,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="/img/gilmore.png">
-                <div id="InfoModal"></div>
+                <img id="portada">
+                <div id="infoPeli"></div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -67,5 +67,24 @@
     </div>
 </div>
 
+<div class="modal fade" id="EliminacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="titulo">Confirmar</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="portada">
+                <div id="prompt"></div>
+            </div>
+            <div class="modal-footer">
+                 @*AGREGARLE FUNCIONALIDAD A ESTOS BOTONES*@
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sí</button>
+            </div>
+        </div>
+    </div>
+</div>
     
 

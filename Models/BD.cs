@@ -70,6 +70,17 @@ public static class BD
           return usuario;
      }
 
+     public static Pelicula ObtenerPelicula(int idPeli)
+     {
+          Pelicula pelicula;
+          using(SqlConnection db = new SqlConnection(_connectionString))
+          {
+               string sp = "ObtenerPeli";
+               pelicula = db.QueryFirstOrDefault<Pelicula>(sp, new {pidPelicula = idPeli}, commandType: CommandType.StoredProcedure);
+          }
+          return pelicula;
+     }
+
      public static void CrearUsuario(string username, string nombre, string contrasena)
      {
           using(SqlConnection db = new SqlConnection(_connectionString))

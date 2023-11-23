@@ -32,16 +32,38 @@ function openPage(pageName, elmnt, color) {
         {
             type: 'POST',
             dataType: 'JSON',
-            url: '/Home/VerSeriesAjax',
-            data: {idSerie : id},
+            url: '/Home/VerPeliculaAjax',
+            data: {idPeli : id},
             success:
                 function(response)
                 {
-                    $("#titulo").html(response.nombre);
-                    $("#InfoModal").html(response.sinopsis);
+                    $("#titulo").html(response.titulo);
+                    let info =  "<h4>" + response.sinopsis + "</h4><br><h5><b>Año de lanzamiento:</b>" 
+                        + response.anioLanzamiento+ "</h5>";
+                    $("#infoPeli").html(info);
+                    $("#portada").attr("src", response.foto);
                 }
         }
     )
 }
 
+
+function ModelEliminarPeli(id)
+{
+    $.ajax(
+        {
+            type: 'POST',
+            dataType: 'JSON',
+            url: '/Home/VerPeliculaAjax',
+            data: {idPeli : id},
+            success:
+                function(response)
+                {
+                    let prompt =  "<h4>Confirma que queres eliminar " + response.titulo + " de tu lista de películas para ver";
+                    $("#promt").html(prompt);
+                    $("#portada").attr("src", response.foto);
+                }
+        }
+    )
+}
   
