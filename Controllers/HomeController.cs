@@ -81,6 +81,13 @@ public class HomeController : Controller
         }
     }
 
+    public IActionResult Busqueda(string buscar, int idUser)
+    {
+        ViewBag.Resultados = BD.BuscarPeli(buscar);
+        ViewBag.idUsuario = idUser;
+        return View("Buscar");
+    }
+
     public IActionResult Privacy()
     {
         return View();

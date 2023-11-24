@@ -12,8 +12,9 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                             <div class = "form">
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <form class="d-flex" role="search" action='@Url.Action("Busqueda")'>
+                                    <input class="form-control me-2" name = "buscar" type="search" aria-label="Search">
+                                    <input type="hidden" name = "idUser" value = @ViewBag.idUsuario>
                                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                                 </form>
                             </div>
@@ -36,10 +37,10 @@
                     <img src="@clave.foto" alt="@clave.titulo">
                     <h3 class="titulo-peli">@clave.titulo</h3>
                     <div class="contenidoCard">
-                        <button class="btn btn-primary masInfo" data-bs-toggle="modal" data-bs-target="#InfoModal" onclick="MostrarInfo(@clave.idPelicula)">Más info</button>
+                        <button class="btn btn-primary masInfo" data-bs-toggle="modal" data-bs-target="#InfoModal">Tu opinión</button>
                         @if(ViewBag.dicPelisVistas[clave] != null)
                         {
-                            <h5>@(ViewBag.dicPelisVistas[clave].calificacion)/5</h5>
+                            <h5 class="calificacion">@(ViewBag.dicPelisVistas[clave].calificacion)/5</h5>
                         }
                         <div class="rating">
                             <label for="star" id="star"></label>
@@ -47,7 +48,7 @@
                     </div>
                 </div>
             </div>
-        } 
+        }
     </div>
 </div>
 

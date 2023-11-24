@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = Z:\2023\Programación\TP11---Proyecto-final-de-4to
 build_property._RazorSourceGeneratorDebug = 
 
+[Z:/2023/Programación/TP11---Proyecto-final-de-4to/Views/Home/Buscar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCdXNjYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [Z:/2023/Programación/TP11---Proyecto-final-de-4to/Views/Home/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

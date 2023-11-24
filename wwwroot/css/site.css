@@ -258,6 +258,7 @@ body, html {
 .contenidoCard{
   display: flex;
   margin-top: auto; /* Pushes this div to the bottom within the card */
+  align-items:end;
 }
 
 .col-3{
@@ -304,6 +305,11 @@ body, html {
   max-width: 800px;
 }
 
+.calificacion
+{
+  margin-right: 50em;
+}
+
 
 /*Estrellitas*/
 .rating {
@@ -323,16 +329,18 @@ body, html {
 
 .rating label:before {
   content: '\2605';
-  font-size: 30px;
+  font-size: 1.83em;
 }
 
 .rating input:checked ~ label,
 .rating label:hover,
 .rating #star, 
 .rating label:hover ~ label {
-  color: #6f00ff;
+  color: #fcdf3b;
   transition: color 0.3s;
 }
+
+
 
 
 
