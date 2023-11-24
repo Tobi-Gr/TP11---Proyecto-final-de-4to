@@ -201,57 +201,94 @@ body, html {
 }
 
 /*CSS de la card*/
-.card{
+
+.card {
   display: flex;
+  flex-direction: column;
   border: none;
-  width: 60%;
-  border-radius: 0%;
+  width: 80%;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+}
+
+.row::after {
+    content: "";
+    flex: auto; /* Pushes the last row to the left */
 }
 
 .card .btn{
   width:50%;
 }
 
-.cerrar{
-  border: none;
-  align-self:flex-end;
-}
-
-.titulo-peli{
-  margin-top:5%;
-  margin-bottom: 5%;
-  align-self: center;
-  margin-left: 5%;
-  margin-right: 5%;
+.titulo-peli {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
 }
 
 .masInfo{
   margin-right: 29%;
   margin-left: 2.5%;
-  margin-bottom: 2.5%;
-}
-
-.card img{
-  height: 330px;
+  margin-bottom: 1.5%;
 } 
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
 
 .organizacion{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-}
+  justify-content: space-between;
+  justify-content: flex-start;  
+} 
 
-.quieroVerCard{
+.contenidoCard{
   display: flex;
-  align-items: bottom;
+  margin-top: auto; /* Pushes this div to the bottom within the card */
 }
 
-#QuieroVer{
-  padding-left: 9%;
+.col-3{
+   flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    padding: 0 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
 }
+ 
+.cardcontainer{
+    overflow: hidden;
+    padding-left: 5%;
+  }
+  
+  .cerrar {
+    border: none;
+    align-self: flex-end;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .col-3 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-/*MODAL*/
+  /*MODAL*/
 
 .modal-body{
   display:flex;
@@ -264,5 +301,40 @@ body, html {
 }
 
 .modal-dialog {
-        max-width: 800px;
+  max-width: 800px;
 }
+
+
+/*Estrellitas*/
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.rating label:before {
+  content: '\2605';
+  font-size: 30px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating #star, 
+.rating label:hover ~ label {
+  color: #6f00ff;
+  transition: color 0.3s;
+}
+
+
+
+
+

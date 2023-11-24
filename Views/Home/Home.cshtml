@@ -24,31 +24,54 @@
         </nav>
 </header>
         <button class="tablink" onclick="openPage('Vistos', this, 'grey')">Vistos</button>
-<button class="tablink" onclick="openPage('QuieroVer', this, 'grey')" id="defaultOpen">Quiero ver</button>
+        <button class="tablink" onclick="openPage('QuieroVer', this, 'grey')" id="defaultOpen">Quiero ver</button>
 
-<div id="Vistos" class="tabcontent">
-  <p>Home is where the heart is..</p>
+<div id="Vistos" class="tabcontent cardcontainer">
+    <div class="organizacion">
+         @foreach (Pelicula clave in ViewBag.dicPelisVistas.Keys)
+        {
+             <div class="col-3 col-md-3">
+                <div class="card">
+                    <button class="cerrar" data-bs-toggle="modal" data-bs-target="#EliminacionModal" onclick="ModelEliminarPeli(@clave.idPelicula)">x</button>
+                    <img src="@clave.foto" alt="@clave.titulo">
+                    <h3 class="titulo-peli">@clave.titulo</h3>
+                    <div class="contenidoCard">
+                        <button class="btn btn-primary masInfo" data-bs-toggle="modal" data-bs-target="#InfoModal" onclick="MostrarInfo(@clave.idPelicula)">Más info</button>
+                        @if(ViewBag.dicPelisVistas[clave] != null)
+                        {
+                            <h5>@(ViewBag.dicPelisVistas[clave].calificacion)/5</h5>
+                        }
+                        <div class="rating">
+                            <label for="star" id="star"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        } 
+    </div>
 </div>
 
-<div id="QuieroVer" class="tabcontent">
-    <div class="row">
+
+<div id="QuieroVer" class="tabcontent cardcontainer">
+    <div class="organizacion">
         @foreach(Pelicula item in ViewBag.pelisPorVer)
         {
             <div class="col-3 col-md-3">
                 <div class="card">
-                    <button class = "cerrar" data-bs-toggle="modal" data-bs-target="#EliminacionModal" onclick="ModelEliminarPeli(@item.idPelicula)"> x </button>
-                    <img src="@item.foto">
+                    <button class="cerrar" data-bs-toggle="modal" data-bs-target="#EliminacionModal" onclick="ModelEliminarPeli(@item.idPelicula)">x</button>
+                    <img src="@item.foto" alt="@item.titulo">
                     <h3 class="titulo-peli">@item.titulo</h3>
-                    <div class="quieroVerCard">
+                    <div class="contenidoCard">
                         <button class="btn btn-primary masInfo" data-bs-toggle="modal" data-bs-target="#InfoModal" onclick="MostrarInfo(@item.idPelicula)">Más info</button>
-                        <input type="checkbox" class="ui-checkbox"> @*onclick="myFunction()" // ver como mierda hacemos que esto funcione :b*@                        
+                        <input type="checkbox" class="ui-checkbox" onclick="CambiarEstadoPeli(@item.idPelicula, @ViewBag.idUsuario)">
                     </div>
                 </div>
             </div>
         }
-       </div>
-
+    </div>
 </div>
+
+
 <div class="modal fade" id="InfoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -57,7 +80,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img id="portada">
+                <img id="portada-info">
                 <div id="infoPeli"></div>
             </div>
             <div class="modal-footer">
@@ -66,25 +89,22 @@
         </div>
     </div>
 </div>
-
-<div class="modal fade" id="EliminacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="titulo">Confirmar</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal fade" id="EliminacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img id="portada-eliminar">
+                            <div id="prompt"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                            <div id="user" data-idusuario="@ViewBag.idUsuario">                      
+                                <button id="borrar" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sí</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <img id="portada">
-                <div id="prompt"></div>
-            </div>
-            <div class="modal-footer">
-                 @*AGREGARLE FUNCIONALIDAD A ESTOS BOTONES*@
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sí</button>
-            </div>
-        </div>
-    </div>
-</div>
-    
-

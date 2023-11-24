@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using TP11___Proyecto_final_de_4to.Models;
+using System.Collections.Generic;
 
 namespace TP11___Proyecto_final_de_4to.Controllers;
 
@@ -25,9 +26,16 @@ public class HomeController : Controller
 
     public IActionResult Home(int idUsuario)
     {
-        ViewBag.pelisVistas = BD.ObtenerPelisVistas(idUsuario);
-        ViewBag.pelisPorVer = BD.ObtenerPelisPorVer(idUsuario); //DEVUELVE TODAS LAS PELICULAS DOS VECES, POR ALGUNA RAZON
-        ViewBag.ratings = BD.ObtenerTodosLosRatings(idUsuario);        
+        ViewBag.idUsuario = idUsuario;        
+        ViewBag.pelisPorVer = BD.ObtenerPelisPorVer(idUsuario);
+
+        Dictionary<Pelicula, Rating> dicPelisVistas = new Dictionary<Pelicula, Rating>();
+        List<Pelicula> pelisVistas = BD.ObtenerPelisVistas(idUsuario);
+        foreach(Pelicula item in pelisVistas)
+        {
+            dicPelisVistas.Add(item, BD.ObtenerRating(idUsuario, item.idPelicula));
+        }
+        ViewBag.dicPelisVistas = dicPelisVistas;
         return View();
     }
 
@@ -84,8 +92,23 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
+    [HttpPost]
     public Pelicula VerPeliculaAjax(int idPeli)
     {
         return BD.ObtenerPelicula(idPeli);
+    }
+
+    [HttpPost]
+    public ActionResult EliminarPeliAjax(int idPelicula, int idUsuario)
+    {
+        BD.EliminarPeliDeLista(idPelicula, idUsuario);
+        return Json(new { success = true });
+    }
+
+    [HttpPost]
+    public ActionResult CambiarEstadoPeliAjax(int idPelicula, int idUsuario)
+    {
+        BD.CambiarEstadoPeli(idPelicula, idUsuario);
+        return Json(new { success = true });
     }
 }

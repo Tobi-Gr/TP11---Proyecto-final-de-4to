@@ -41,7 +41,7 @@ function openPage(pageName, elmnt, color) {
                     let info =  "<h4>" + response.sinopsis + "</h4><br><h5><b>Año de lanzamiento:</b>" 
                         + response.anioLanzamiento+ "</h5>";
                     $("#infoPeli").html(info);
-                    $("#portada").attr("src", response.foto);
+                    $("#portada-info").attr("src", response.foto);
                 }
         }
     )
@@ -50,6 +50,8 @@ function openPage(pageName, elmnt, color) {
 
 function ModelEliminarPeli(id)
 {
+    let idUsuario = $("#user").data("idusuario");
+    
     $.ajax(
         {
             type: 'POST',
@@ -59,11 +61,45 @@ function ModelEliminarPeli(id)
             success:
                 function(response)
                 {
-                    let prompt =  "<h4>Confirma que queres eliminar " + response.titulo + " de tu lista de películas para ver";
-                    $("#promt").html(prompt);
-                    $("#portada").attr("src", response.foto);
+                    let prompt =  "<h4>¿Querés eliminar '" + response.titulo + "' de tu lista?</h4>";
+                    $("#prompt").html(prompt);
+                    $("#portada-eliminar").attr("src", response.foto);
+                    $("#borrar").attr("onclick", "EliminarPeli("+ response.idPelicula + "," + idUsuario + ")");
                 }
         }
     )
 }
-  
+
+function EliminarPeli(idPeli, idUser)
+{
+    $.ajax(
+        {
+            type: 'POST',
+            dataType: 'JSON',
+            url: '/Home/EliminarPeliAjax',
+            data: {idPelicula: idPeli, idUsuario:idUser},
+            success:
+                function()
+                {
+                    location.reload();
+                }
+        }
+    )
+}
+
+function CambiarEstadoPeli(idPeli, idUser)
+{
+    $.ajax(
+        {
+            type: 'POST',
+            dataType: 'JSON',
+            url: '/Home/CambiarEstadoPeliAjax',
+            data: {idPelicula: idPeli, idUsuario:idUser},
+            success:
+                function()
+                {
+                    setTimeout(() => { location.reload(); }, 1500);                    
+                }
+        }
+    )
+}

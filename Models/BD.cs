@@ -90,12 +90,21 @@ public static class BD
           }
      }
 
-     public static void CambiarEstadoPeli(string idPelicula, string idUsuario)
+     public static void CambiarEstadoPeli(int idPelicula, int idUsuario)
      {
           using(SqlConnection db = new SqlConnection(_connectionString))
           {
                string sp = "CambiarEstadoPeli";
                db.Execute(sp, new {pidPelicula = idPelicula, pidUsuario = idUsuario}, commandType: CommandType.StoredProcedure);
+          }
+     }
+
+     public static void EliminarPeliDeLista(int idPelicula, int idUsuario)
+     {
+          using(SqlConnection db = new SqlConnection(_connectionString))
+          {
+               string sp = "EliminarPeliParaVer";
+               db.Execute(sp, new {pIdPelicula = idPelicula, pIdUsuario = idUsuario}, commandType: CommandType.StoredProcedure);
           }
      }
 
