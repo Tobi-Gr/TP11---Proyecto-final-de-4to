@@ -116,5 +116,14 @@ public static class BD
                db.Execute(sp, new {popinion = opinion, pcalificacion = calificacion, pidPelicula = idPelicula, pidUsuario = idUsuario}, commandType: CommandType.StoredProcedure);
           }
      }
+
+     public static void QuieroVer(int idPelicula, int idUsuario)
+     {
+          using(SqlConnection db = new SqlConnection(_connectionString))
+          {
+               string sp = "QuieroVer";
+               db.Execute(sp, new {pidPelicula = idPelicula, pidUsuario = idUsuario}, commandType: CommandType.StoredProcedure);
+          }
+     }
      
 } 

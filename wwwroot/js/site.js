@@ -38,7 +38,7 @@ function openPage(pageName, elmnt, color) {
                 function(response)
                 {
                     $("#titulo").html(response.titulo);
-                    let info =  "<h4>" + response.sinopsis + "</h4><br><h5><b>Año de lanzamiento:</b>" 
+                    let info =  "<h4>" + response.sinopsis + "</h4><br><h5><b>Año de lanzamiento: </b>" 
                         + response.anioLanzamiento+ "</h5>";
                     $("#infoPeli").html(info);
                     $("#portada-info").attr("src", response.foto);
@@ -100,6 +100,18 @@ function CambiarEstadoPeli(idPeli, idUser)
                 {
                     setTimeout(() => { location.reload(); }, 1500);                    
                 }
+        }
+    )
+}
+
+function Enlistar(idPeli, idUser)
+{
+    $.ajax(
+        {
+            type: 'POST',
+            dataType: 'JSON',
+            url: '/Home/EnlistarAjax',
+            data: {idPelicula: idPeli, idUsuario:idUser}
         }
     )
 }

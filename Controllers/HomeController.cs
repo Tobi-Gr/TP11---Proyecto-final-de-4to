@@ -83,8 +83,9 @@ public class HomeController : Controller
 
     public IActionResult Busqueda(string buscar, int idUser)
     {
-        ViewBag.Resultados = BD.BuscarPeli(buscar);
+        ViewBag.resultados = BD.BuscarPeli(buscar);
         ViewBag.idUsuario = idUser;
+        ViewBag.busqueda = buscar;
         return View("Buscar");
     }
 
@@ -116,6 +117,19 @@ public class HomeController : Controller
     public ActionResult CambiarEstadoPeliAjax(int idPelicula, int idUsuario)
     {
         BD.CambiarEstadoPeli(idPelicula, idUsuario);
+        return Json(new { success = true });
+    }
+
+   /*  [HttpPost]
+    public Rating ModalOpinionAjax(int idPelicula, int idUsuario)
+    {
+
+    } */
+
+    [HttpPost]
+    public ActionResult EnlistarAjax(int idPelicula, int idUsuario)
+    {
+        BD.QuieroVer(idPelicula, idUsuario);
         return Json(new { success = true });
     }
 }

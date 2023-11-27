@@ -37,7 +37,7 @@
                     <img src="@clave.foto" alt="@clave.titulo">
                     <h3 class="titulo-peli">@clave.titulo</h3>
                     <div class="contenidoCard">
-                        <button class="btn btn-primary masInfo" data-bs-toggle="modal" data-bs-target="#InfoModal">Tu opinión</button>
+                        <button class="btn btn-primary masInfo" data-bs-toggle="modal" data-bs-target="#ModalOpinion">Tu opinión</button>
                         @if(ViewBag.dicPelisVistas[clave] != null)
                         {
                             <h5 class="calificacion">@(ViewBag.dicPelisVistas[clave].calificacion)/5</h5>
@@ -90,6 +90,8 @@
         </div>
     </div>
 </div>
+            
+            
             <div class="modal fade" id="EliminacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -109,3 +111,27 @@
                     </div>
                 </div>
             </div>
+
+
+<div class="modal fade" id="ModalOpinion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="titulo"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="portada-info">
+                <form>
+                    <div class="input-group">
+                        <span class="input-group-text">With textarea</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div> 
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
