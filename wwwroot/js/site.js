@@ -115,3 +115,64 @@ function Enlistar(idPeli, idUser)
         }
     )
 }
+
+function ModalOpinion(idPeli, idUser)
+{
+    $.ajax(
+        {
+            type: 'POST',
+            dataType: 'JSON',
+            url: '/Home/ModalOpinionAjax',
+            data: {idPelicula: idPeli, idUsuario:idUser},
+            success:
+                function(response)
+                {
+                    let peli = response.pelicula;
+                    let rating = response.rating;
+                    $("#titulo-op").html(peli.titulo);
+                    $("#portada-op").attr("src", peli.foto);
+                    $("#paraPasarIdPeli").attr("value", peli.idPelicula);
+                    if(rating == null){                     
+                        $("#opinionTexto").val("");
+                        const defaultRadios = document.querySelectorAll('input[name="calificacion"]');
+                        defaultRadios.forEach(radio => {
+                            radio.checked = false;
+                        });
+                    }
+                    else{
+                        $("#opinionTexto").val(rating.opinion);
+                        const defaultRadio = document.querySelector(`input[value="${rating.calificacion}"][name="calificacion"]`);
+                        defaultRadio.checked = true;
+                    }
+                }
+        }
+    )
+}
+
+function GuardarRating(opi, cali, idPeli, idUser)
+{
+    $.ajax(
+        {
+            type: 'POST',
+            dataType: 'JSON',
+            url: '/Home/GuardarRatingAjax',
+            data: {opinion:opi, calificacion:cali, idPelicula:idPeli, idUsuario:idUser},
+            success:
+                function(response){
+                    let peli = response.pelicula;
+                    let rating = response.rating; 
+                    let estrellas ="";
+                    for(let i=rating.calificacion;i<5; i++)
+                    {   
+                        estrellas+='<label for="star" id="star" class="unchecked"></label> ';
+                    }
+                    for(let i=1;i<=rating.calificacion; i++)
+                    {   
+                        estrellas+='<label for="star" id="star"></label> ';
+                    }
+                    const stars = document.getElementById("rating-card_"+peli.idPelicula);
+                    stars.innerHTML = estrellas;                    
+                }
+        }
+    )
+}

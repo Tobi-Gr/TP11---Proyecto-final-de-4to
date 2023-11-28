@@ -1,5 +1,55 @@
+@font-face {
+  font-family: notable;
+  src: url(../fonts/notable.ttf);
+}
+
+@font-face {
+  font-family: inter;
+  src: url(../fonts/inter.ttc);
+}
+
+:root {
+  --negro: #0E111B;
+  --celeste: #8DCAF7;
+  --azul: #1515ac;
+  --amarillo: #fcdf3b;
+}
+
+.error
+{
+  margin-top: 1em;
+  color:red;
+}
+
+#slogan
+{
+  color:var(--azul);
+}
+
+h1{
+  font-family: notable;
+}
+
+h2, h3, h4, h5, h6{
+  font-family: inter;
+}
+
+h4{
+  text-align: justify;
+  margin-right: 5%;
+}
+
 html {
   font-size: 14px;
+}
+
+.spaces
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2em;
 }
 
 @media (min-width: 768px) {
@@ -8,8 +58,42 @@ html {
   }
 }
 
+#titulo-busqueda
+{
+  font-family: notable;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.btn-outline-success
+{
+  color: var(--azul);
+  border-color: var(--azul);
+  font-family: inter;
+  margin-right: 1em;
+}
+
+.btn-outline-success:hover
+{
+  background-color: var(--azul);
+  color: var(--celeste);
+  border-color: var(--azul);
+}
+
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.btn-primary
+{
+  background-color: var(--azul);
+  border-color: var(--azul);
+}
+
+.btn-primary:hover{
+  background-color: var(--celeste);
+  border-color: var(--celeste);
+  color: var(--azul);
 }
 
 html {
@@ -19,21 +103,29 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: var(--celeste);
+  font-family: inter;
 }
 
+.fs-5
+{
+  font-size: 2em !important;
+  font-family: inter;
+}
+
+
 .header {
-  color: #323232;
+  color: var(--negro);
   text-align: center;
   font-size: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: #FFFFFF;
+  background: var(--celeste);
   text-align: center;
   padding: 25px 20px 34px;
 }
 
 .nav {
-  background-color: #FFFFFF;
   text-transform: uppercase;
   font-weight: bold;
   width: 100%;
@@ -51,16 +143,18 @@ body {
   vertical-align: baseline;
 }
 
+
 .form{
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
-.veinte{
-  width:20%;
+.opinion-content{
+  display:flex;
+  flex-direction:column;
+  align-items: flex-start
 }
-
 
 * {box-sizing: border-box}
 
@@ -68,7 +162,7 @@ body {
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial;
+  font-family: inter;
 }
 
 /* Style tab links */
@@ -95,7 +189,7 @@ body, html {
   padding: 100px 20px;
 }
 
-#Vistos{background-color:black;}
+#Vistos{background-color:black; }
 #QuieroVer{background-color: black;}
 
 /*Check!!!*/
@@ -227,7 +321,8 @@ body, html {
 }
 
 .card .btn{
-  width:50%;
+  width:40%;
+  font-family: inter;
 }
 
 .titulo-peli {
@@ -235,10 +330,12 @@ body, html {
   margin-bottom: 10px;
   text-align: center;
   font-size: 25px;
+  font-family: inter;
+  color: var(--azul);
 }
 
 .masInfo{
-  margin-right: 29%;
+  margin-right: auto;
   margin-left: 2.5%;
   margin-bottom: 1.5%;
 } 
@@ -253,14 +350,13 @@ body, html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  justify-content: flex-start;  
+  justify-content: space-between; 
 } 
 
 .contenidoCard{
   display: flex;
-  margin-top: auto; /* Pushes this div to the bottom within the card */
-  align-items:end;
+  margin-top: auto;
+  align-items:center;
 }
 
 .col-3{
@@ -283,6 +379,10 @@ body, html {
     background-color: transparent;
     font-weight: bold;
     cursor: pointer;
+  }
+
+  #cerrarSesion{
+    align-self: flex-end;
   }
   
   .col-3 .card {
@@ -315,7 +415,12 @@ body, html {
 
 /*Estrellitas*/
 .rating {
-  display: inline-block;
+  flex-direction: row-reverse;
+  margin-bottom: auto;
+}
+
+.unchecked{
+  color:#ccc!important;
 }
 
 .rating input {
@@ -342,64 +447,61 @@ body, html {
   transition: color 0.3s;
 }
 
+
 /*Bookmark para agregar a quiero ver*/
 
-.bookmark {
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.ui-bookmark {
+  --icon-size: 24px;
+  --icon-secondary-color: rgb(77, 77, 77);
+  --icon-hover-color: rgb(97, 97, 97);
+  --icon-primary-color: gold;
+  --icon-circle-border: 1px solid var(--icon-primary-color);
+  --icon-circle-size: 35px;
+  --icon-anmt-duration: 0.3s;
 }
 
-#checkboxInput {
+.ui-bookmark input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   display: none;
 }
 
-.svgIcon {
-  height: 30px;
+.ui-bookmark .bookmark {
+  width: var(--icon-size);
+  height: auto;
+  fill: var(--icon-secondary-color);
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
 }
 
-.svgIcon path {
-  fill: rgb(141, 202, 247);
+.ui-bookmark input:checked + .bookmark {
+  fill: var(--icon-primary-color);
+  -webkit-animation: bookmark var(--icon-anmt-duration) forwards;
+  animation: bookmark var(--icon-anmt-duration) forwards;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 
-#checkboxInput:checked + .bookmark .svgIcon path {
-  fill: rgb(21, 21, 172);
-}
 
-#checkboxInput:active + .bookmark .svgIcon path {
-  fill: rgb(141, 202, 247);
-}
 
-.bookmark::after {
-  content: "";
-  background-color: rgba(56, 105, 0, 0.342);
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-#checkboxInput:checked + .bookmark::after {
-  animation: puff-out-center .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
-}
-
-@keyframes puff-out-center {
-  0% {
-    transform: scale(1);
-    filter: blur(0px);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(9);
-    filter: blur(1px);
-    opacity: 0;
-  }
-}
 
 
 

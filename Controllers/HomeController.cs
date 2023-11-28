@@ -42,21 +42,28 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult PostRegistro(string nombre, string username, string contrasena, string confirmacion)
     {
-        Usuario user = BD.ObtenerUsuario(username);
-        if (user == null)
+        if(nombre == null || username == null || contrasena == null || confirmacion==null)
         {
-            if(contrasena == confirmacion && username != "")
-            {
-                BD.CrearUsuario(username, nombre, contrasena);
-                Usuario nuevo = BD.ObtenerUsuario(username);
-                return RedirectToAction("Home", new {idUsuario = nuevo.idUsuario});
-            }
-            {
-                ViewBag.Error = "Contraseñas no coinciden o no ingreso username";    
-            }
+            ViewBag.Error = "Tenés que llenar todos los campos";
         }
-        else {
-            ViewBag.Error = "El usuario ya existe en la base";
+        else
+        {
+            Usuario user = BD.ObtenerUsuario(username);
+            if (user == null)
+            {
+                if(contrasena == confirmacion && username != "")
+                {
+                    BD.CrearUsuario(username, nombre, contrasena);
+                    Usuario nuevo = BD.ObtenerUsuario(username);
+                    return RedirectToAction("Home", new {idUsuario = nuevo.idUsuario});
+                }
+                {
+                    ViewBag.Error = "Contraseñas no coinciden o no ingreso username";    
+                }
+            }
+            else {
+                ViewBag.Error = "El usuario ya existe en la base";
+            }
         }
         return View("Registrarse");
     }
@@ -120,16 +127,24 @@ public class HomeController : Controller
         return Json(new { success = true });
     }
 
-   /*  [HttpPost]
-    public Rating ModalOpinionAjax(int idPelicula, int idUsuario)
-    {
-
-    } */
 
     [HttpPost]
     public ActionResult EnlistarAjax(int idPelicula, int idUsuario)
     {
         BD.QuieroVer(idPelicula, idUsuario);
         return Json(new { success = true });
+    }
+
+    [HttpPost]
+    public object ModalOpinionAjax(int idPelicula, int idUsuario)
+    {
+        return Json(new {pelicula = BD.ObtenerPelicula(idPelicula), rating = BD.ObtenerRating(idUsuario, idPelicula)});
+    }
+
+    [HttpPost]
+    public IActionResult GuardarRatingAjax(string opinion, int calificacion, int idPelicula, int idUsuario)
+    {
+        BD.InsertarRating(opinion, calificacion, idPelicula, idUsuario);
+        return Json(new { pelicula = BD.ObtenerPelicula(idPelicula), rating = BD.ObtenerRating(idUsuario, idPelicula)});
     }
 }

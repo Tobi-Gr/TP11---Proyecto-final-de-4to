@@ -3,8 +3,9 @@
             <div class="container-fluid">
                 <div class="text-center header">
                     <h1 class="display-4">MOVIE GEMS</h1>
-                    <p>Las verdaderas gemas del cine</p>
+                    <p id="slogan">Las verdaderas gemas del cine</p>
                 </div>
+                <hr>
                 <div class="nav">
                     <nav class="navbar navbar-expand-lg bg-body-tertiary">       
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,25 +26,51 @@
                         </div>
                     </nav>
                 </div>
-                <h2>Resultados para "@ViewBag.busqueda"</h2>
-                    <div class="organizacion">
-                        @foreach(Pelicula item in ViewBag.resultados)
-                        {
-                            <div class="col-3 col-md-3">
-                                <div class="card">
-                                    <img src="@item.foto" alt="@item.titulo">
-                                    <h3 class="titulo-peli">@item.titulo</h3>
-                                        <div class="contenidoCard">
-                                        <button class="btn btn-primary masInfo" data-bs-toggle="modal" data-bs-target="#InfoModal" onclick="MostrarInfo(@item.idPelicula)">Más info</button>
-                                        <input type="checkbox" id="checkboxInput" name="enlistado" onclick = "Enlistar(@item.idPelicula, @ViewBag.idUsuario)">
-                                        <label for="checkboxInput" class="bookmark">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="svgIcon"><path d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"></path></svg>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        }
-                    </div>
             </div>
         </nav>
 </header>
+<br>
+<h2 id="titulo-busqueda">Resultados para "@ViewBag.busqueda"</h2>
+    <div class="organizacion">
+        @foreach(Pelicula item in ViewBag.resultados)
+        {
+            <div class="col-3 col-md-3">
+                <div class="card">
+                    <img src="@item.foto" alt="@item.titulo">
+                    <h3 class="titulo-peli">@item.titulo</h3>
+                            <div class="contenidoCard">
+                                <button class="btn btn-primary masInfo" data-bs-toggle="modal" data-bs-target="#InfoModal" onclick="MostrarInfo(@item.idPelicula)">Más info</button>
+                                <label class="ui-bookmark">
+                                    <input type="checkbox" onclick="Enlistar(@item.idPelicula, @ViewBag.idUsuario)">
+                                    <div class="bookmark">
+                                            <svg viewBox="0 0 32 32"> @*SI LO SELECCIONAS Y DSP LO DE-SELECCIONAS SE MARCA IGUAL >:C*@
+                                                <g>
+                                                    <path d="M27 4v27a1 1 0 0 1-1.625.781L16 24.281l-9.375 7.5A1 1 0 0 1 5 31V4a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4z"></path>
+                                                </g>
+                                            </svg>
+                                    </div>
+                                </label>
+                    </div>
+                </div>
+            </div>
+        }
+        </div>
+
+
+<div class="modal fade" id="InfoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="titulo"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="portada-info">
+                <div id="infoPeli"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X+AryFx7QNw8YvL4u1Kxhs/Ysbuai5ZTobz7PchXgx8=",
+  "Hash": "hM1alZevw9laRWytYf6Y19EnC9/7JjLfjsSNWact+9E=",
   "Source": "TP11---Proyecto-final-de-4to",
   "BasePath": "_content/TP11---Proyecto-final-de-4to",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\fonts\\Inter.ttc",
+      "SourceId": "TP11---Proyecto-final-de-4to",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "BasePath": "_content/TP11---Proyecto-final-de-4to",
+      "RelativePath": "fonts/Inter.ttc",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\Inter.ttc"
     },
     {
       "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\fonts\\notable.ttf",

@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\fonts\\Inter.ttc",
+      "PackagePath": "staticwebassets\\fonts\\Inter.ttc"
+    },
+    {
       "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\fonts\\notable.ttf",
       "PackagePath": "staticwebassets\\fonts\\notable.ttf"
     },

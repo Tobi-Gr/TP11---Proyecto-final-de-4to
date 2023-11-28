@@ -3,28 +3,29 @@
             <div class="container-fluid">
                 <div class="text-center header">
                     <h1 class="display-4">MOVIE GEMS</h1>
-                    <p>Las verdaderas gemas del cine</p>
+                    <p id="slogan">Las verdaderas gemas del cine</p>
                 </div>
+                <hr>
             </div>
         </nav>
 </header>
 <div class="spaces">
     <h2>Registrate</h2>
     <form  method="post" action='@Url.Action("PostRegistro")'>
-        <input class="form-control veinte" type="text" placeholder="Nombre" name="nombre" aria-label="default input example">
+        <input class="form-control" type="text" placeholder="Nombre" name="nombre" aria-label="default input example">
         <br>
-        <input class="form-control veinte" type="text" placeholder="Username" name="username" aria-label="default input example">
+        <input class="form-control" type="text" placeholder="Username" name="username" aria-label="default input example">
         <br>
-        <input class="form-control veinte" type="password" placeholder="Contraseña" name="contrasena" aria-label="default input example">
+        <input class="form-control" type="password" placeholder="Contraseña" name="contrasena" aria-label="default input example">
         <br>
-        <input class="form-control veinte" type="password" placeholder="Confirmar contraseña" name="confirmacion" aria-label="default input example">
+        <input class="form-control" type="password" placeholder="Confirmar contraseña" name="confirmacion" aria-label="default input example">
         <br>
         <button type="submit" class="btn btn-primary">Registrarse</button>
-        <h3>@ViewBag.Error</h3>
+        <h5 class="error">@ViewBag.Error</h5>
     </form>
     <br>
     <h6>¿Tenés cuenta?</h6>
     <form action='@Url.Action("Index")'>
-        <button>Inicia sesión</button>
+        <button class="btn btn-primary">Inicia sesión</button>
     </form>
 </div>
