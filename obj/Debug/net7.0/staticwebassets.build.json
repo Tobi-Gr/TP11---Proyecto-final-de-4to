@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hM1alZevw9laRWytYf6Y19EnC9/7JjLfjsSNWact+9E=",
+  "Hash": "8D5fCPCXA5k80W5JBrKsylPUkW5QNeYoMHDp255Et7Q=",
   "Source": "TP11---Proyecto-final-de-4to",
   "BasePath": "_content/TP11---Proyecto-final-de-4to",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\notable.ttf"
+    },
+    {
+      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\logo-transparente.png",
+      "SourceId": "TP11---Proyecto-final-de-4to",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "BasePath": "_content/TP11---Proyecto-final-de-4to",
+      "RelativePath": "img/logo-transparente.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo-transparente.png"
     },
     {
       "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\logo.png",

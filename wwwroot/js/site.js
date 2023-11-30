@@ -143,6 +143,8 @@ function ModalOpinion(idPeli, idUser)
                         $("#opinionTexto").val(rating.opinion);
                         const defaultRadio = document.querySelector(`input[value="${rating.calificacion}"][name="calificacion"]`);
                         defaultRadio.checked = true;
+                        const fecha = new Date(rating.fecha);
+                        $("#fecha").html("Opinión del " + fecha.toLocaleDateString('es-ES'));
                     }
                 }
         }

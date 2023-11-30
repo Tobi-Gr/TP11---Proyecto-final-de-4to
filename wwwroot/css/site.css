@@ -28,6 +28,7 @@
 
 h1{
   font-family: notable;
+  font-size: 3em;
 }
 
 h2, h3, h4, h5, h6{
@@ -50,6 +51,11 @@ html {
   align-items: center;
   justify-content: center;
   padding-top: 2em;
+}
+
+#fecha {
+  margin-right: auto;
+  color: #6c757d;
 }
 
 @media (min-width: 768px) {
@@ -92,7 +98,7 @@ html {
 
 .btn-primary:hover{
   background-color: var(--celeste);
-  border-color: var(--celeste);
+  border-color: var(--azul);
   color: var(--azul);
 }
 
@@ -102,7 +108,7 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   background-color: var(--celeste);
   font-family: inter;
 }
@@ -143,6 +149,12 @@ body {
   vertical-align: baseline;
 }
 
+.logo-img {
+  height: 50px;
+  position: relative;
+  top: -10px;
+}
+
 
 .form{
   width: 100%;
@@ -156,16 +168,20 @@ body {
   align-items: flex-start
 }
 
+.opinionTexto{
+  font-family: inter;
+}
+
 * {box-sizing: border-box}
 
-/* Set height of body and the document to 100% */
+
 body, html {
   height: 100%;
   margin: 0;
   font-family: inter;
 }
 
-/* Style tab links */
+
 .tablink {
   background-color: #555;
   color: white;
@@ -182,7 +198,7 @@ body, html {
   background-color: #777;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
+
 .tabcontent {
   color: rgb(0, 0, 0);
   display: none;
@@ -190,14 +206,14 @@ body, html {
 }
 
 #Vistos{background-color:black; }
-#QuieroVer{background-color: black;}
+#QuieroVer{background-color:black;}
 
 /*Check!!!*/
 
 .ui-checkbox {
-  --primary-color: #1677ff;
+  --primary-color: var(--azul);
   --secondary-color: #fff;
-  --primary-hover-color: #4096ff;
+  --primary-hover-color: var(--azul);
   /* checkbox */
   --checkbox-diameter: 35px;
   --checkbox-border-radius: 5px;
@@ -317,7 +333,7 @@ body, html {
 
 .row::after {
     content: "";
-    flex: auto; /* Pushes the last row to the left */
+    flex: auto;
 }
 
 .card .btn{
@@ -498,13 +514,3 @@ body, html {
   -o-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-
-
-
-
-
-
-
-
-
-

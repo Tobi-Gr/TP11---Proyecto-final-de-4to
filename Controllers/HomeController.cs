@@ -58,7 +58,7 @@ public class HomeController : Controller
                     return RedirectToAction("Home", new {idUsuario = nuevo.idUsuario});
                 }
                 {
-                    ViewBag.Error = "Contraseñas no coinciden o no ingreso username";    
+                    ViewBag.Error = "Contraseñas no coinciden o no ingresaste el username";    
                 }
             }
             else {

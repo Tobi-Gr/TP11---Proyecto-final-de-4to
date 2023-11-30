@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\img\\Thumbs.db"
     },
     {
+      "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\logo-transparente.png",
+      "PackagePath": "staticwebassets\\img\\logo-transparente.png"
+    },
+    {
       "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },
