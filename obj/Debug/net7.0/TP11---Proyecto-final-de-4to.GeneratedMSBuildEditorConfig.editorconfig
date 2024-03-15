@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = Z:\2023\Programación\TP11---Proyecto-final-de-4to
 build_property._RazorSourceGeneratorDebug = 
 
+[Z:/2023/Programación/TP11---Proyecto-final-de-4to/Views/Home/AgregarPeli.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZ3JlZ2FyUGVsaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [Z:/2023/Programación/TP11---Proyecto-final-de-4to/Views/Home/Buscar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCdXNjYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,6 +30,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [Z:/2023/Programación/TP11---Proyecto-final-de-4to/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/2023/Programación/TP11---Proyecto-final-de-4to/Views/Home/InicioSesion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmljaW9TZXNpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [Z:/2023/Programación/TP11---Proyecto-final-de-4to/Views/Home/Registrarse.cshtml]

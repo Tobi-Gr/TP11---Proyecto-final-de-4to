@@ -90,6 +90,15 @@ public static class BD
           }
      }
 
+     public static void AgregarPeli(string titulo, string sinopsis, int anio, string foto)
+     {
+          using(SqlConnection db = new SqlConnection(_connectionString))
+          {
+               string sp = "AgregarPeli";
+               db.Execute(sp, new {ptitulo = titulo, psinopsis = sinopsis, panio = anio, pfoto = foto}, commandType: CommandType.StoredProcedure);
+          }
+     }
+
      public static void CambiarEstadoPeli(int idPelicula, int idUsuario)
      {
           using(SqlConnection db = new SqlConnection(_connectionString))

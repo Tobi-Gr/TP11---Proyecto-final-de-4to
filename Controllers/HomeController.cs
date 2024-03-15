@@ -24,9 +24,14 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult InicioSesion()
+    {
+        return View();
+    }
+
     public IActionResult Home(int idUsuario)
     {
-        ViewBag.idUsuario = idUsuario;        
+        ViewBag.idUsuario = idUsuario;
         ViewBag.pelisPorVer = BD.ObtenerPelisPorVer(idUsuario);
 
         Dictionary<Pelicula, Rating> dicPelisVistas = new Dictionary<Pelicula, Rating>();
@@ -58,7 +63,7 @@ public class HomeController : Controller
                     return RedirectToAction("Home", new {idUsuario = nuevo.idUsuario});
                 }
                 {
-                    ViewBag.Error = "Contraseñas no coinciden o no ingresaste el username";    
+                    ViewBag.Error = "Contraseñas no coinciden o no ingresaste el username";
                 }
             }
             else {
@@ -146,5 +151,19 @@ public class HomeController : Controller
     {
         BD.InsertarRating(opinion, calificacion, idPelicula, idUsuario);
         return Json(new { pelicula = BD.ObtenerPelicula(idPelicula), rating = BD.ObtenerRating(idUsuario, idPelicula)});
+    }
+
+    [HttpPost]
+    public IActionResult AgregarPeli(int idUser)
+    {
+        ViewBag.idUsuario = idUser;
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult PeliAgregada(string sinopsis, int anio, string titulo, string foto)
+    {
+        BD.AgregarPeli(titulo, sinopsis, anio, foto);
+        return View("Home");
     }
 }
