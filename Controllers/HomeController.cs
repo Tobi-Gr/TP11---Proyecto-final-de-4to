@@ -160,7 +160,6 @@ public class HomeController : Controller
         return View();
     }
 
-    [HttpPost]
     public IActionResult PeliAgregada(string sinopsis, int anio, string titulo, string foto)
     {
         BD.AgregarPeli(titulo, sinopsis, anio, foto);

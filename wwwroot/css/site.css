@@ -15,6 +15,18 @@
   --amarillo: #fcdf3b;
 }
 
+.logo-index
+{
+  width: 1em !important;
+  height: 1em !important;
+  margin-bottom: 0.25em !important;
+}
+
+.index
+{
+  padding-top: 5em;
+  font-size: 2em;
+}
 .error
 {
   margin-top: 1em;

@@ -1,5 +1,5 @@
 @* 
-Form: 
+Form:
     - titulo
     - sinopsis
     - año
@@ -8,3 +8,23 @@ Form:
 Botón: guardar (q use el controller peli guardada)
     --> q aparezca el mismo modal de incio (con toda la info) y pregunte ¿Querés guardar esta peli?
 *@
+<form action="PeliAgregada()" method="post">
+  <ul>
+    <li>
+      <label>Título:</label>
+      <input type="text" id="titulo" name="titulo" maxlength="100"/>
+    </li>
+    <li>
+      <label>Año:</label>
+      <input type="number" id="anio" maxlength="4" minlength="4"/>
+    </li>
+    <li>
+      <label>URL Poster:</label>
+      <input name="foto" maxlength="500"></input>
+    </li>
+    <li>
+      <label>Sinopsis:</label>
+      <textarea name="sinopsis" maxlength="500"></textarea>
+    </li>
+  </ul>
+</form>
