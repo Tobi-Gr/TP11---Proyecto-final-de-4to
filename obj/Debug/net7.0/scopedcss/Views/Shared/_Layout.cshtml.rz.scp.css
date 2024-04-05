@@ -46,3 +46,7 @@ button.accept-policy[b-qynfwp9lre] {
   white-space: nowrap;
   line-height: 60px;
 }
+
+ul[b-qynfwp9lre] {
+  list-style: none !important;
+}

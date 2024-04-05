@@ -32,6 +32,7 @@ public class HomeController : Controller
     public IActionResult Home(int idUsuario)
     {
         ViewBag.idUsuario = idUsuario;
+        ViewBag.admin = BD.EsAdmin(idUsuario);
         ViewBag.pelisPorVer = BD.ObtenerPelisPorVer(idUsuario);
 
         Dictionary<Pelicula, Rating> dicPelisVistas = new Dictionary<Pelicula, Rating>();
@@ -97,6 +98,7 @@ public class HomeController : Controller
     {
         ViewBag.resultados = BD.BuscarPeli(buscar);
         ViewBag.idUsuario = idUser;
+        ViewBag.admin = BD.EsAdmin(idUser);
         ViewBag.busqueda = buscar;
         return View("Buscar");
     }
@@ -154,14 +156,15 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult AgregarPeli(int idUser)
+    public IActionResult AgregarPeli()
     {
-        ViewBag.idUsuario = idUser;
+        ViewBag.admin = true;
         return View();
     }
 
     public IActionResult PeliAgregada(string sinopsis, int anio, string titulo, string foto)
     {
+        ViewBag.admin = true;
         BD.AgregarPeli(titulo, sinopsis, anio, foto);
         return View("Home");
     }

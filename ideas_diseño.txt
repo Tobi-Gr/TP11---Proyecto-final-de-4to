@@ -1,0 +1,4 @@
+cards: https://www.imdb.com/ (sobretodo el botón para agregar)
+    --> fondo negro y las cards del azul oscuro?
+
+https://www.themoviedb.org/ (cards transparentes? y le ponemos el tic sobre la foto como aparece acá el porcentaje, solo que a la derecha)

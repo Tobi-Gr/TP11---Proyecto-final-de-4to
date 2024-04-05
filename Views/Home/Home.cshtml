@@ -1,34 +1,5 @@
-<header>
-        <nav >
-            <div class="container-fluid">
-                <div class="text-center header">
-                    <h1>
-                        M<img src="/img/logo-transparente.png" alt="Logo" class="logo-img">VIE GEMS
-                    </h1>
-                    <p id="slogan">Las verdaderas gemas del cine</p>
-                </div>
-                <div class="nav">
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary">       
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                            <div class = "form">
-                                <form class="d-flex" role="search" action='@Url.Action("Busqueda")'>
-                                    <input class="form-control me-2" name = "buscar" type="search" aria-label="Search">
-                                    <input type="hidden" name = "idUser" value = @ViewBag.idUsuario>
-                                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                                </form>
-                            </div>
-                            
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </nav>
-</header>
-        <button class="tablink" onclick="openPage('Vistos', this, 'grey')">Vistos</button>
-        <button class="tablink" onclick="openPage('QuieroVer', this, 'grey')" id="defaultOpen">Quiero ver</button>
+<button class="tablink" onclick="openPage('Vistos', this, 'grey')">Vistos</button>
+<button class="tablink" onclick="openPage('QuieroVer', this, 'grey')" id="defaultOpen">Quiero ver</button>
 
 <div id="Vistos" class="tabcontent cardcontainer">
     <div class="organizacion">

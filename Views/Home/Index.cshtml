@@ -1,9 +1,15 @@
+@{
+    Layout = null;
+ }
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TP11___Proyecto_final_de_4to.styles.css" asp-append-version="true" />
     <title>MovieGems</title>
 </head>
 <body>
@@ -13,7 +19,11 @@
         </h1>
         <p id="slogan">Las verdaderas gemas del cine</p>
     </div>
+    @*agregar tres fotos de como funciona la página y un mini texto explicando q onda*@
+    @*EMPEZA A GUARDAR/COLECCIONAR TUS GEMAS!!! --> lleva a registrarse*@
+    <h5>Empezá a coleccionar tus gemas, </h5>
+    <form action='@Url.Action("Registrarse")' method="post">
+        <button class="btn btn-primary">Registrate</button>
+    </form>
 </body>
 </html>
-
-@*EMPEZA A GUARDAR/COLECCIONAR TUS GEMAS!!! --> lleva a registrarse*@

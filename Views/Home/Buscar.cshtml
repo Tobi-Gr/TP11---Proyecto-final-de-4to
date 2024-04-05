@@ -1,4 +1,4 @@
-<header>
+@* <header>
         <nav >
             <div class="container-fluid">
                 <div class="text-center header">
@@ -7,7 +7,6 @@
                     </h1>
                     <p id="slogan">Las verdaderas gemas del cine</p>
                 </div>
-                <hr>
                 <div class="nav">
                     <nav class="navbar navbar-expand-lg bg-body-tertiary">       
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +20,7 @@
                                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                                 </form>
                                 <form action = '@Url.Action("Home")'>
-                                    <button class="btn btn-outline-success">Mis películas</button> @* Tus películas (volves a la home) *@
+                                    <button class="btn btn-outline-success">Mis películas</button> @* Tus películas (volves a la home)
                                      <input type="hidden" name="idUsuario" value=@ViewBag.idUsuario />
                                 </form>
                             </div>
@@ -30,7 +29,7 @@
                 </div>
             </div>
         </nav>
-</header>
+</header> *@
 <br>
 <h2 id="titulo-busqueda">Resultados para "@ViewBag.busqueda"</h2>
     <div class="organizacion">

@@ -1,34 +1,48 @@
 ﻿@{
+    Layout = null;
     ViewData["Title"] = "Home Page";
-}
-<header>
-        <nav >
-            <div class="container-fluid">
-                <div class="text-center header">
-                    <h1>
-                        M<img src="/img/logo-transparente.png" alt="Logo" class="logo-img">VIE GEMS
-                    </h1>
-                    <p id="slogan">Las verdaderas gemas del cine</p>
+ }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TP11___Proyecto_final_de_4to.styles.css" asp-append-version="true" />
+    <title>MovieGems</title>
+</head>
+<body>
+    <header>
+            <nav >
+                <div class="container-fluid">
+                    <div class="text-center header">
+                        <h1>
+                            M<img src="/img/logo-transparente.png" alt="Logo" class="logo-img">VIE GEMS
+                        </h1>
+                        <p id="slogan">Las verdaderas gemas del cine</p>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-            </div>
-        </nav>
-</header>
-<div class = "spaces">
-    <h2>Iniciar sesión</h2>
-    <br>
-    <form method="post" action='@Url.Action("PostInicioSesion")'>
-        <input class="form-control" type="text" placeholder="Username" name="username" aria-label="default input example">
+            </nav>
+    </header>
+    <div class = "spaces">
+        <h2>Iniciar sesión</h2>
         <br>
-        <input class="form-control" type="password" placeholder="Contraseña" name="contrasena" aria-label="default input example">
+        <form  action='@Url.Action("PostInicioSesion")' method="post">
+            <input class="form-control" type="text" placeholder="Username" name="username" aria-label="default input example">
+            <br>
+            <input class="form-control" type="password" placeholder="Contraseña" name="contrasena" aria-label="default input example">
+            <br>
+            <button type="submit" class="btn btn-primary">Iniciar</button>
+        </form>
+        <h5 class="error">@ViewBag.Error</h5>
         <br>
-        <button type="submit" class="btn btn-primary">Iniciar</button>
-    </form>
-    <h5 class="error">@ViewBag.Error</h5>
+        <h6>¿No tenés cuenta?</h6>
+        <form action='@Url.Action("Registrarse")'>
+            <button class="btn btn-primary">Registrate</button>
+        </form>
+    </div>
     <br>
-    <h6>¿No tenés cuenta?</h6>
-    <form action='@Url.Action("Registrarse")'>
-        <button class="btn btn-primary">Registrate</button>
-    </form>
-</div>
-<br>
+</body>

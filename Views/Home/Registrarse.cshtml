@@ -1,33 +1,49 @@
-<header>
-        <nav >
-            <div class="container-fluid">
-                <div class="text-center header">
-                    <h1>
-                        M<img src="/img/logo-transparente.png" alt="Logo" class="logo-img">VIE GEMS
-                    </h1>
-                    <p id="slogan">Las verdaderas gemas del cine</p>
+@{
+    Layout = null;
+ }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TP11___Proyecto_final_de_4to.styles.css" asp-append-version="true" />
+    <title>MovieGems</title>
+</head>
+<body>
+    <header>
+            <nav >
+                <div class="container-fluid">
+                    <div class="text-center header">
+                        <h1>
+                            M<img src="/img/logo-transparente.png" alt="Logo" class="logo-img">VIE GEMS
+                        </h1>
+                        <p id="slogan">Las verdaderas gemas del cine</p>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-            </div>
-        </nav>
-</header>
-<div class="spaces">
-    <h2>Registrate</h2>
-    <form  method="post" action='@Url.Action("PostRegistro")'>
-        <input class="form-control" type="text" placeholder="Nombre" name="nombre" aria-label="default input example">
+            </nav>
+    </header>
+    <div class="spaces">
+        <h2>Registrate</h2>
+        <form   action='@Url.Action("PostRegistro")' method="post">
+            <input class="form-control" type="text" placeholder="Nombre" name="nombre" aria-label="default input example">
+            <br>
+            <input class="form-control" type="text" placeholder="Username" name="username" aria-label="default input example">
+            <br>
+            <input class="form-control" type="password" placeholder="Contraseña" name="contrasena" aria-label="default input example">
+            <br>
+            <input class="form-control" type="password" placeholder="Confirmar contraseña" name="confirmacion" aria-label="default input example">
+            <br>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+            <h5 class="error">@ViewBag.Error</h5>
+        </form>
         <br>
-        <input class="form-control" type="text" placeholder="Username" name="username" aria-label="default input example">
-        <br>
-        <input class="form-control" type="password" placeholder="Contraseña" name="contrasena" aria-label="default input example">
-        <br>
-        <input class="form-control" type="password" placeholder="Confirmar contraseña" name="confirmacion" aria-label="default input example">
-        <br>
-        <button type="submit" class="btn btn-primary">Registrarse</button>
-        <h5 class="error">@ViewBag.Error</h5>
-    </form>
-    <br>
-    <h6>¿Tenés cuenta?</h6>
-    <form action='@Url.Action("Index")'>
-        <button class="btn btn-primary">Inicia sesión</button>
-    </form>
-</div>
+        <h6>¿Tenés cuenta?</h6>
+        <form action='@Url.Action("InicioSesion")'>
+            <button class="btn btn-primary">Inicia sesión</button>
+        </form>
+    </div>
+</body>

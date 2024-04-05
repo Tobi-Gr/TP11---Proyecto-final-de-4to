@@ -70,6 +70,17 @@ public static class BD
           return usuario;
      }
 
+     public static bool EsAdmin(int idUsuario)
+     {
+          bool admin = false;
+          using(SqlConnection db = new SqlConnection(_connectionString))
+          {
+               string sp = "EsAdmin";
+               admin = db.QueryFirstOrDefault<bool>(sp, new {pidUsuario = idUsuario}, commandType: CommandType.StoredProcedure);
+          }
+          return admin;
+     }
+
      public static Pelicula ObtenerPelicula(int idPeli)
      {
           Pelicula pelicula;
