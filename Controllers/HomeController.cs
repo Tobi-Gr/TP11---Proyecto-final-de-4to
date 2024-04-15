@@ -61,7 +61,7 @@ public class HomeController : Controller
                 {
                     BD.CrearUsuario(username, nombre, contrasena);
                     Usuario nuevo = BD.ObtenerUsuario(username);
-                    return RedirectToAction("Home", new {idUsuario = nuevo.idUsuario});
+                    return RedirectToAction("Bienvenida", new {username = nuevo.username, idUsuario = nuevo.idUsuario});
                 }
                 {
                     ViewBag.Error = "Contraseñas no coinciden o no ingresaste el username";
@@ -94,6 +94,15 @@ public class HomeController : Controller
         }
     }
 
+    
+    public IActionResult Bienvenida(string username, int idUsuario)
+    {
+        ViewBag.username = username;
+        ViewBag.IdUsuario = idUsuario;
+        ViewBag.peliculas = BD.BuscarPeli("%");   
+        ViewBag.admin = false;
+        return View();
+    }
     public IActionResult Busqueda(string buscar, int idUser)
     {
         ViewBag.resultados = BD.BuscarPeli(buscar);
@@ -156,16 +165,28 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public IActionResult AgregarPeli()
+    public IActionResult AgregarPeli(int idUsuario)
     {
         ViewBag.admin = true;
+        ViewBag.idUsuario = idUsuario;
         return View();
     }
 
-    public IActionResult PeliAgregada(string sinopsis, int anio, string titulo, string foto)
+    public IActionResult PeliAgregada(string sinopsis, int anio, string titulo, string foto, int idUsuario)
     {
-        ViewBag.admin = true;
         BD.AgregarPeli(titulo, sinopsis, anio, foto);
+        ViewBag.idUsuario = idUsuario;
+        ViewBag.admin = BD.EsAdmin(idUsuario);
+        ViewBag.pelisPorVer = BD.ObtenerPelisPorVer(idUsuario);
+
+        Dictionary<Pelicula, Rating> dicPelisVistas = new Dictionary<Pelicula, Rating>();
+        List<Pelicula> pelisVistas = BD.ObtenerPelisVistas(idUsuario);
+        foreach(Pelicula item in pelisVistas)
+        {
+            dicPelisVistas.Add(item, BD.ObtenerRating(idUsuario, item.idPelicula));
+        }
+        ViewBag.dicPelisVistas = dicPelisVistas;
+        
         return View("Home");
     }
 }

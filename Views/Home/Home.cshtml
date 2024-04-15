@@ -1,5 +1,5 @@
-<button class="tablink" onclick="openPage('Vistos', this, 'grey')">Vistos</button>
-<button class="tablink" onclick="openPage('QuieroVer', this, 'grey')" id="defaultOpen">Quiero ver</button>
+<button class="tablink" onclick="openPage('Vistos', this, '#6297bd')">Vistos</button>
+<button class="tablink" onclick="openPage('QuieroVer', this, '#6297bd')" id="defaultOpen">Quiero ver</button>
 
 <div id="Vistos" class="tabcontent cardcontainer">
     <div class="organizacion">
@@ -98,7 +98,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="titulo-op"></h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="CerrarModal()"></button>
             </div>
             <form onsubmit="event.preventDefault(); GuardarRating(this.opinion.value, this.calificacion.value, this.idPelicula.value, this.idUsuario.value)">
                 <input id="paraPasarIdPeli" name="idPelicula" type="hidden">

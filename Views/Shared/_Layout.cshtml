@@ -28,18 +28,24 @@
                             <div class = "form">
                                  <form class="d-flex" role="search" action='@Url.Action("Busqueda")'>
                                     <input class="form-control me-2" name = "buscar" type="search" aria-label="Search">
-                                    <input type="hidden" name = "idUser" value = @ViewBag.idUsuario>
+                                    <input type="hidden" name = "idUser" value = "@ViewBag.idUsuario">
                                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                                 </form>
                                 <form action = '@Url.Action("Home")'>
                                     <button class="btn btn-outline-success">Mis películas</button>
-                                     <input type="hidden" name="idUsuario" value=@ViewBag.idUsuario />
+                                    <input type="hidden" name="idUsuario" value="@ViewBag.idUsuario"/>
                                 </form>
                                 @if (@ViewBag.admin)
                                 {
                                     <form action = '@Url.Action("AgregarPeli")' method="post">
                                         <button class="btn btn-outline-success">Agregar película</button>
-                                        <input type="hidden" name="idUsuario" value=@ViewBag.idUsuario />
+                                        <input type="hidden" name="idUsuario" value="@ViewBag.idUsuario" />
+                                    </form>
+                                }
+                                @if (@ViewBag.idUsuario != null)
+                                {
+                                    <form action = '@Url.Action("index")' method="post" id="cerrarSesion">
+                                        <button class="btn btn-outline-success">Cerrar sesión</button>
                                     </form>
                                 }
                             </div>

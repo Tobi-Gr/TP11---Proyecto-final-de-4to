@@ -151,6 +151,12 @@ function ModalOpinion(idPeli, idUser)
     )
 }
 
+function CerrarModal()
+{
+    let fecha = document.getElementById("fecha");
+    fecha.innerHTML = "";
+}
+
 function GuardarRating(opi, cali, idPeli, idUser)
 {
     $.ajax(
@@ -161,6 +167,8 @@ function GuardarRating(opi, cali, idPeli, idUser)
             data: {opinion:opi, calificacion:cali, idPelicula:idPeli, idUsuario:idUser},
             success:
                 function(response){
+                    let fecha = document.getElementById("fecha");
+                    fecha.innerHTML = "";
                     let peli = response.pelicula;
                     let rating = response.rating; 
                     let estrellas ="";

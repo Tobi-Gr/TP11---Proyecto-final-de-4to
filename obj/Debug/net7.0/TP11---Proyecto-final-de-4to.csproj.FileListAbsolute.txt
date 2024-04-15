@@ -31,9 +31,9 @@ Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\staticwebass
 Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\scopedcss\bundle\TP11---Proyecto-final-de-4to.styles.css
 Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\scopedcss\projectbundle\TP11---Proyecto-final-de-4to.bundle.scp.css
-Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\TP11---Proyecto-final-de-4to.csproj.CopyComplete
 Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\TP11---Proyecto-final-de-4to.dll
 Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\refint\TP11---Proyecto-final-de-4to.dll
 Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\TP11---Proyecto-final-de-4to.pdb
 Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\TP11---Proyecto-final-de-4to.genruntimeconfig.cache
 Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\ref\TP11---Proyecto-final-de-4to.dll
+Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\TP11---Proyecto-final-de-4to.csproj.CopyComplete

@@ -1,0 +1,26 @@
+<h2 id="titulo-busqueda" class="subtitulo">Hola,  @ViewBag.username</h2>
+<h3 id="titulo-busqueda" class="subtitulo">Guarda tus primeras gemas!</h3>
+    <div class="organizacion">
+        @foreach(Pelicula item in ViewBag.peliculas)
+        {
+            <div class="col-3 col-md-3">
+                <div class="card">
+                    <img src="@item.foto" alt="@item.titulo">
+                    <h3 class="titulo-peli">@item.titulo</h3>
+                        <div class="contenidoCard">
+                            <button class="btn btn-primary masInfo" data-bs-toggle="modal" data-bs-target="#InfoModal" onclick="MostrarInfo(@item.idPelicula)">Más info</button>
+                            <label class="ui-bookmark">
+                                <input type="checkbox" onclick="Enlistar(@item.idPelicula, @ViewBag.idUsuario)">
+                                <div class="bookmark">
+                                        <svg viewBox="0 0 32 32">
+                                            <g>
+                                                <path d="M27 4v27a1 1 0 0 1-1.625.781L16 24.281l-9.375 7.5A1 1 0 0 1 5 31V4a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4z"></path>
+                                            </g>
+                                        </svg>
+                                </div>
+                            </label>
+                        </div>
+                </div>
+            </div>
+        }
+    </div>

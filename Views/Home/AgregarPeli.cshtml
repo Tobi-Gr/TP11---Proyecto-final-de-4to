@@ -1,31 +1,28 @@
-@* 
-Form:
-    - titulo
-    - sinopsis
-    - año
-    - foto (pongamosle dimensiones recomendadas)
-
-Botón: guardar (q use el controller peli guardada)
-    --> q aparezca el mismo modal de incio (con toda la info) y pregunte ¿Querés guardar esta peli?
-*@
-<form action="PeliAgregada()" method="post">
+<h2 class="subtitulo">Guarda tu gema</h2>
+<form action='@Url.Action("PeliAgregada")' method="post">
   <ul> 
     <li>
       <label>Título:</label>
-      <input type="text" id="titulo" name="titulo" maxlength="100"/>
+      <input class = "form-admin" type="text" id="titulo" name="titulo" maxlength="100"/>
     </li>
+    <br>
     <li>
       <label>Año:</label>
-      <input type="number" id="anio" maxlength="4" minlength="4"/>
+      <input class = "form-admin" type="number" id="anio" maxlength="4" minlength="4"/>
     </li>
+    <br>
     <li>
       <label>URL Poster:</label>
-      <input name="foto" maxlength="500"></input>
+      <input class = "form-admin" name="foto" maxlength="500"/>
     </li>
+    <br>
     <li>
       <label>Sinopsis:</label>
-      <textarea name="sinopsis" maxlength="500"></textarea>
+      <br>
+      <textarea class = "form-admin" name="sinopsis" maxlength="500" colmax="50"></textarea>
     </li>
+    <br>
   </ul>
-  <button type="submit">Guardar</button>
+  <button class = "btn btn-primary" type="submit">Guardar</button>
+  <input type="hidden" name="idUsuario" value="@ViewBag.IdUsuario">
 </form>

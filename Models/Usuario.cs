@@ -7,7 +7,7 @@ public class Usuario
     public bool admin {get; set;}
 
 
-    public Usuario(int id, string user, string nom, string contra, bool owner)
+    public Usuario(int id, string user, string nom, string contra, bool owner = false)
     {
         idUsuario = id;
         username = user;
