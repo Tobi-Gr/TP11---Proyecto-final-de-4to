@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8D5fCPCXA5k80W5JBrKsylPUkW5QNeYoMHDp255Et7Q=",
+  "Hash": "8EPRdzwVw5KlL8k6Hw0fLWWe5eoimhH8AiUqAkD4AeY=",
   "Source": "TP11---Proyecto-final-de-4to",
   "BasePath": "_content/TP11---Proyecto-final-de-4to",
   "Mode": "Default",
@@ -119,6 +119,23 @@
       "OriginalItemSpec": "wwwroot\\fonts\\notable.ttf"
     },
     {
+      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\home.PNG",
+      "SourceId": "TP11---Proyecto-final-de-4to",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "BasePath": "_content/TP11---Proyecto-final-de-4to",
+      "RelativePath": "img/home.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\home.PNG"
+    },
+    {
       "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\logo-transparente.png",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
@@ -153,6 +170,40 @@
       "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
+      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\masinfo.PNG",
+      "SourceId": "TP11---Proyecto-final-de-4to",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "BasePath": "_content/TP11---Proyecto-final-de-4to",
+      "RelativePath": "img/masinfo.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\masinfo.PNG"
+    },
+    {
+      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\quierover.PNG",
+      "SourceId": "TP11---Proyecto-final-de-4to",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "BasePath": "_content/TP11---Proyecto-final-de-4to",
+      "RelativePath": "img/quierover.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\quierover.PNG"
+    },
+    {
       "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\Thumbs.db",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
@@ -168,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Thumbs.db"
+    },
+    {
+      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\visto-opinion.PNG",
+      "SourceId": "TP11---Proyecto-final-de-4to",
+      "SourceType": "Discovered",
+      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "BasePath": "_content/TP11---Proyecto-final-de-4to",
+      "RelativePath": "img/visto-opinion.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\visto-opinion.PNG"
     },
     {
       "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\js\\site.js",

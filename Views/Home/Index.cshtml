@@ -10,6 +10,12 @@
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TP11___Proyecto_final_de_4to.styles.css" asp-append-version="true" />
+
+    @*<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">*@
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <title>MovieGems</title>
 </head>
 <body>
@@ -18,12 +24,54 @@
              M<img src="/img/logo-transparente.png" alt="Logo" class="logo-img logo-index">VIE GEMS
         </h1>
         <p id="slogan">Las verdaderas gemas del cine</p>
-    </div>
-    @*agregar tres fotos de como funciona la página y un mini texto explicando q onda*@
-    @*EMPEZA A GUARDAR/COLECCIONAR TUS GEMAS!!! --> lleva a registrarse*@
-    <h5>Empezá a coleccionar tus gemas, </h5>
+    </div> 
+    <h5 id="prompt-registrarse">Empezá a coleccionar tus gemas, </h5>
     <form action='@Url.Action("Registrarse")' method="post">
-        <button class="btn btn-primary centro">Registrate</button>
+        <button class="btn btn-primary centro mx-auto d-block">Registrate</button>
     </form>
+    <br>
+    <h3 class="guia">¿Cómo descubrir gemas?</h3>
+    @*CARROUSEL*@
+    @*https://www.w3schools.com/bootstrap/bootstrap_carousel.asp*@
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/home.png" alt="Home">
+                <div class="carousel-caption">
+                    <h3>Mira todas las gemas</h3>
+                </div>   
+            </div>
+            <div class="carousel-item">
+                <img src="/img/masinfo.png" alt="Más info">
+                <div class="carousel-caption">
+                    <h3>Averigua más sobre ellas</h3>
+                </div>   
+            </div>
+            <div class="carousel-item">
+                <img src="/img/quierover.png" alt="Quiero ver">
+                <div class="carousel-caption">
+                    <h3>Agregalas a tu colección</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/img/visto-opinion.png" alt="Ratings">
+                <div class="carousel-caption">
+                    <h3>Registra su valor</h3>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
 </body>
 </html>

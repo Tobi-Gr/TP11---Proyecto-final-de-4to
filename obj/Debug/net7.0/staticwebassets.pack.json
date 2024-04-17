@@ -29,12 +29,28 @@
       "PackagePath": "staticwebassets\\img\\Thumbs.db"
     },
     {
+      "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\home.PNG",
+      "PackagePath": "staticwebassets\\img\\home.PNG"
+    },
+    {
       "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\logo-transparente.png",
       "PackagePath": "staticwebassets\\img\\logo-transparente.png"
     },
     {
       "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\masinfo.PNG",
+      "PackagePath": "staticwebassets\\img\\masinfo.PNG"
+    },
+    {
+      "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\quierover.PNG",
+      "PackagePath": "staticwebassets\\img\\quierover.PNG"
+    },
+    {
+      "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\visto-opinion.PNG",
+      "PackagePath": "staticwebassets\\img\\visto-opinion.PNG"
     },
     {
       "Id": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\js\\site.js",
