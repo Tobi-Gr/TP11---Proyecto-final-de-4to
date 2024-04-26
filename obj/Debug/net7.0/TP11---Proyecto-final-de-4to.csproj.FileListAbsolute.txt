@@ -36,4 +36,5 @@ Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\refint\TP11-
 Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\TP11---Proyecto-final-de-4to.pdb
 Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\TP11---Proyecto-final-de-4to.genruntimeconfig.cache
 Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\ref\TP11---Proyecto-final-de-4to.dll
-Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\TP11---Proyecto-final-de-4to.csproj.CopyComplete
+Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\TP11---Proyecto-final-de-4to.sourcelink.json
+Z:\2023\Programación\TP11---Proyecto-final-de-4to\obj\Debug\net7.0\TP11---P.11719B21.Up2Date
