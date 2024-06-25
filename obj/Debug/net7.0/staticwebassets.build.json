@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QbLFTWXNDB3y3yzNFfWAhYjv1YfhinqevfJAVjzzMhQ=",
+  "Hash": "1cQkGsrlHD4bMtjF6N2KV5VD886iBJPVbUd3WwGywj0=",
   "Source": "TP11---Proyecto-final-de-4to",
   "BasePath": "_content/TP11---Proyecto-final-de-4to",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TP11---Proyecto-final-de-4to\\wwwroot",
       "Source": "TP11---Proyecto-final-de-4to",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TP11---Proyecto-final-de-4to.styles.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TP11---Proyecto-final-de-4to.styles.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Computed",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "TP11---Proyecto-final-de-4to.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TP11---Proyecto-final-de-4to.styles.css"
+      "OriginalItemSpec": "C:\\TP11---Proyecto-final-de-4to\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TP11---Proyecto-final-de-4to.styles.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP11---Proyecto-final-de-4to.bundle.scp.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP11---Proyecto-final-de-4to.bundle.scp.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Computed",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "TP11---Proyecto-final-de-4to.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP11---Proyecto-final-de-4to.bundle.scp.css"
+      "OriginalItemSpec": "C:\\TP11---Proyecto-final-de-4to\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP11---Proyecto-final-de-4to.bundle.scp.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\css\\site.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\css\\site.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\favicon.ico",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\favicon.ico",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\fonts\\Inter.ttc",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\fonts\\Inter.ttc",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "fonts/Inter.ttc",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Inter.ttc"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\fonts\\notable.ttf",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\fonts\\notable.ttf",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "fonts/notable.ttf",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\notable.ttf"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\home.PNG",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\home.PNG",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "img/home.PNG",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\img\\home.PNG"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\logo-transparente.png",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\logo-transparente.png",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "img/logo-transparente.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\img\\logo-transparente.png"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\logo.png",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\logo.png",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "img/logo.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\masinfo.PNG",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\masinfo.PNG",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "img/masinfo.PNG",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\img\\masinfo.PNG"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\quierover.PNG",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\quierover.PNG",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "img/quierover.PNG",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\img\\quierover.PNG"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\Thumbs.db",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\Thumbs.db",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "img/Thumbs.db",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Thumbs.db"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\visto-opinion.PNG",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\img\\visto-opinion.PNG",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "img/visto-opinion.PNG",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\img\\visto-opinion.PNG"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\js\\site.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\js\\site.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\Query.sql",
+      "Identity": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\Query.sql",
       "SourceId": "TP11---Proyecto-final-de-4to",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\2023\\Programación\\TP11---Proyecto-final-de-4to\\wwwroot\\",
+      "ContentRoot": "C:\\TP11---Proyecto-final-de-4to\\wwwroot\\",
       "BasePath": "_content/TP11---Proyecto-final-de-4to",
       "RelativePath": "Query.sql",
       "AssetKind": "All",
